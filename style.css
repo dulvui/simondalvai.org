@@ -72,10 +72,9 @@ a:hover:after {
     background: url(img/GooglePlay.png) no-repeat;
     cursor: pointer;
     border: none;
-    background-size: 20vw;
-    width: 20vw;
-    height: 6vw;
-    margin-left: 15vw;
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
 }
 
 .font {
