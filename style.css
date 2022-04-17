@@ -19,7 +19,7 @@ body {
 
 .font {
     font-weight: 500;
-    font-size: 6vw
+    font-size: 8vw
 }
 
 .fontgames {
@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-weight: 300;
     line-height: 1.4;
 }
@@ -68,9 +68,9 @@ p {
     background: url(img/AppStore.svg) no-repeat;
     cursor: pointer;
     border: none;
-    background-size: 27vw;
-    width: 27vw;
-    height: 10vw;
+    background-size: 34.5vw;
+    width: 34.5vw;
+    height: 15vw;
     margin-right: 1vw;
 }
 
@@ -78,9 +78,9 @@ p {
     background: url(img/PlayStore.svg) no-repeat;
     cursor: pointer;
     border: none;
-    background-size: 30vw;
-    width: 30vw;
-    height: 10vw;
+    background-size: 38vw;
+    width: 38vw;
+    height: 15vw;
 }
 
 .positionicongames {
@@ -89,8 +89,8 @@ p {
 }
 
 .heightwidthicongames {
-    width: 12vw;
-    height: 12vw;
+    width: 25vw;
+    height: 25vw;
 }
 
 .footer {
