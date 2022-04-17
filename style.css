@@ -7,28 +7,35 @@
 .navbar .home {
     display: block;
     color: black;
-    font-size: 24px;
+    font-size: 5vw;
 }
 
 body {
     font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
-    padding: 5vh 10vw;
+    padding: 1vh 10vw;
     color: #121314;
-    font-size: calc(10px + 0.33vw);
+}
+
+.font {
+    font-weight: 500;
+    font-size: 6vw
+}
+
+.fontgames {
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: 16vw;
     font-weight: 500;
     margin-bottom: 0;
 }
 
 p {
-    font-size: 1.6em;
+    font-size: 3vw;
     font-weight: 300;
     line-height: 1.4;
-    max-width: 28em;
 }
 
 .link {
@@ -61,42 +68,33 @@ p {
     background: url(img/AppStore.svg) no-repeat;
     cursor: pointer;
     border: none;
-    background-size: 200px;
-    width: 200px;
-    height: 80px;
-    margin-right: 5px;
+    background-size: 27vw;
+    width: 27vw;
+    height: 10vw;
+    margin-right: 1vw;
 }
 
 .playstore {
-    background: url(img/GooglePlay.png) no-repeat;
+    background: url(img/PlayStore.svg) no-repeat;
     cursor: pointer;
     border: none;
-    background-size: 225px;
-    width: 225px;
-    height: 80px;
-}
-
-.font {
-    font-weight: 500;
-    font-size: 2.2em
-}
-
-.fontgames {
-    font-weight: 500;
+    background-size: 30vw;
+    width: 30vw;
+    height: 10vw;
 }
 
 .positionicongames {
     float: left;
-    padding-right: 1.5vw
+    padding-right: 3vw;
 }
 
 .heightwidthicongames {
-    height: 100px;
-    width: 100px
+    width: 12vw;
+    height: 12vw;
 }
 
 .footer {
-    padding-top: 100px;
+    padding-top: 8vw;
     width: 100%;
     left: 0;
     bottom: 0;
