@@ -31,7 +31,7 @@ body {
     font-size: 5vw;
 }
 
-.font {
+.title {
     font-weight: 500;
     font-size: 8vw
 }
@@ -108,6 +108,7 @@ p {
 }
 
 .footer {
+    font-weight: 300;
     font-size: 2.5vw;
     padding-top: 8vw;
     width: 100%;
@@ -137,7 +138,7 @@ p {
         font-size: 2vw;
     }
 
-    .font {
+    .title {
         font-weight: 500;
         font-size:3vw
     }
@@ -215,6 +216,7 @@ p {
     }
     
     .footer {
+        font-weight: 300;
         font-size: 1.5vw;
         padding-top: 4vw;
         width: 100%;
