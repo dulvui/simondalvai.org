@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: simondalvai.com
+Token: 1f61003db3b25dab3635fe5a7e0794af84835b8ea134206a21e668e2d55f29e3
