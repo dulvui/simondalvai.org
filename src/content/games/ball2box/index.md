@@ -1,6 +1,6 @@
 +++
 title = 'Ball2Box'
-description = "World's first Broomball game."
+description = "Swipe the ball into the box."
 date = 2022-09-29
 aliases = ["ball2box","ball2box.html"]
 [extra]
@@ -8,6 +8,7 @@ icon = 'img/ball2box.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.broomball'
 appstore_link = 'https://apps.apple.com/app/pocket-broomball/id1511009171'
 type = 'Godot'
+repo = "https://github.com/dulvui/ball2box"
 +++
 
 Can you get all three stars in all levels?  
