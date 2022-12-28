@@ -1,5 +1,5 @@
 +++
-title = "Pocket Broomball"
+title = "Privacy Policy - Pocket Broomball"
 template = "privacy-policy.html"
 date = 2022-12-04
 aliases = ["privacy-policies/pocketbroomball","privacy-policies/pocketbroomball.html"]

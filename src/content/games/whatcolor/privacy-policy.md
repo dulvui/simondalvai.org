@@ -1,5 +1,5 @@
 +++
-title = "WhatColor"
+title = "Privacy Policy - WhatColor"
 template = "privacy-policy.html"
 date = 2022-12-04
 aliases = ["privacy-policies/whatcolor","privacy-policies/whatcolor.html"]

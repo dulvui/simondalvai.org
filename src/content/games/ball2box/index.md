@@ -1,5 +1,5 @@
 +++
-title = 'Ball2Box'
+title = 'Privacy Policy - Ball2Box'
 description = "Swipe the ball into the box."
 date = 2022-09-29
 aliases = ["ball2box","ball2box.html"]
