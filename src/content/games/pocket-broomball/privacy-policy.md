@@ -2,6 +2,7 @@
 title = "Pocket Broomball"
 template = "privacy-policy.html"
 date = 2022-12-04
+aliases = ["pocketbroomball","pocketbroomball.html"]
 [extra]
 name = "Pocket Broomball"
 sourcecode = "https://github.com/dulvui/pocket-broomball"

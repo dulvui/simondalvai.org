@@ -5,8 +5,8 @@ date = 2022-09-29
 aliases = ["ball2box","ball2box.html"]
 [extra]
 icon = 'img/ball2box.svg'
-playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.broomball'
-appstore_link = 'https://apps.apple.com/app/pocket-broomball/id1511009171'
+playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.ultimatetoss'
+appstore_link = 'https://apps.apple.com/us/app/ball2box/id1522604143'
 type = 'Godot'
 repo = "https://github.com/dulvui/ball2box"
 +++
