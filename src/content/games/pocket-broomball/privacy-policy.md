@@ -2,7 +2,7 @@
 title = "Pocket Broomball"
 template = "privacy-policy.html"
 date = 2022-12-04
-aliases = ["pocketbroomball","pocketbroomball.html"]
+aliases = ["privacy-policy/pocketbroomball","privacy-policy/pocketbroomball.html"]
 [extra]
 name = "Pocket Broomball"
 sourcecode = "https://github.com/dulvui/pocket-broomball"
