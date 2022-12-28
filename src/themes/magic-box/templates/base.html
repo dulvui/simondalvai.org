@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% block title %}
+    {% if page.title %}
+    {{ page.title }} - {{ config.title }}
+    {% elif section.title and section.title != config.title %}
+    {{ section.title }} - {{ config.title }}
+    {% else %}
+    {{ config.title }}
+    {%- endif %}
+    {% endblock title %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}">
+</head>
+
+<body>
+  <nav>
+    <!-- Loops over current path, max depth 2 -->
+    <a class="link nav" href="/">simondalvai.com</a>
+    {% for path in current_path | split(pat="/") %}
+    {% if path | wordcount > 0%}
+    {% set path_length = current_path | split(pat="/") | length - 1 %}
+    {% if loop.index < path_length %} <span class="dynamic-url">/<a class="link nav dynamic-url"
+        href="{{ current_path | split(pat='/') | slice(end=path_length - 1) | join(sep='/') }}">{{ path }}</a></span>
+      {% else %}
+      <span class="dynamic-url">/<a class="link nav" href="{{ current_path }}">{{ path }}</a></span>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+      <!-- <a class="link nav nav-right" href="/about">About</a> -->
+      <!-- <a class="link nav nav-right" href="/support">Support me</a> -->
+      <a class="link nav nav-right" href="/blog">Blog</a>
+      <a class="link nav nav-right" href="/games">Games</a>
+
+  </nav>
+  <div id="content">
+    {% block content %} {% endblock %}
+  </div>
+
+  <div class="icons">
+    <a href="{{ config.extra.links.github | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/github.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.githubsponsors | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/githubsponsors.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.kofi | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/kofi.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.liberapay | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/liberapay.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.reddit | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/reddit.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.linkedin | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/linkedin.svg') | safe }}"></a>
+    <a href="{{ config.extra.links.mastodon | safe }}" target="_blank"><img class="icon"
+        src="{{ get_url(path='img/icons/mastodon.svg') | safe }}"></a>
+  </div>
+
+
+  <footer class="footer">
+    {% if 'blog' not in current_path %}
+    <a class="link" href="privacy-policy">Privacy Policy</a>
+    {% else %}
+    <a class="link" href="/privacy-policy">Privacy Policy</a>
+    {% endif %}
+    | &copy 2022 Simon Dalvai |
+    <a class="link" a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+  </footer>
+</body>
+
+</html>

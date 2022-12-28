@@ -1,0 +1,3 @@
+[submodule "src/themes/magic-box"]
+	path = src/themes/magic-box
+	url = https://github.com/dulvui/magic-box

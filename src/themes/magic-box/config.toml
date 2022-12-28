@@ -1,0 +1,49 @@
+# The URL the site will be built for
+base_url = "http://simondalvai.com/magic-box/"
+title = "Gianfranco Zola"
+
+# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+output_dir = "../docs"
+
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "solarized-light"
+
+external_links_target_blank = true
+
+[extra]
+icon = "img/icon.jpg"
+
+# simple-icons
+github = "img/icons/github.svg"
+githubsponsors = "img/icons/githubsponsors.svg"
+kofi = "img/icons/kofi.svg"
+liberapay = "img/icons/liberapay.svg"
+mastodon = "img/icons/mastodon.svg"
+reddit = "img/icons/reddit.svg"
+linkedin = "img/icons/linkedin.svg"
+
+# links
+links.github = "https://github.com/dulvui"
+links.githubsponsors = "https://github.com/sponsors/dulvui"
+links.kofi = "https://ko-fi.com/simondalvai"
+links.liberapay = "https://liberapay.com/dulvui"
+links.mastodon = "https://mastodon.social/@dulvui"
+links.reddit = "https://reddit.com/user/dulvui"
+links.linkedin = "https://www.linkedin.com/in/simon-dalvai"
+
+email = "simon.dalvai@posteo.de"
+repository = "https://github.com/dulvui/dulvui.github.io"
+
+
