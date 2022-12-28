@@ -2,7 +2,7 @@
 title = "WhatColor"
 template = "privacy-policy.html"
 date = 2022-12-04
-aliases = ["privacy-policy/whatcolor","privacy-policy/whatcolor.html"]
+aliases = ["privacy-policies/whatcolor","privacy-policies/whatcolor.html"]
 [extra]
 name = "Color"
 sourcecode = "https://github.com/dulvui/whatcolor"
