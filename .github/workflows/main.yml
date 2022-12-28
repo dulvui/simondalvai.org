@@ -43,13 +43,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Get zola
-        working-directory: ${{ env.WORKING_DIRECTORY }}
         run: |
           wget -q -O - \
           "https://github.com/getzola/zola/releases/download/v0.16.1/zola-v0.16.1-x86_64-unknown-linux-gnu.tar.gz" \
           | tar xzf - -C /usr/local/bin
 
       - name: Build
+        working-directory: ${{ env.WORKING_DIRECTORY }}
         run: zola build
 
       - name: Setup Pages
