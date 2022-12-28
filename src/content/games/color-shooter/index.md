@@ -1,5 +1,5 @@
 +++
-title = 'Privacy Policy - Color Shooter'
+title = 'Color Shooter'
 description = 'Shoot the colors!'
 date = 2019-09-29
 aliases = ["color-shooter","color-shooter.html"]

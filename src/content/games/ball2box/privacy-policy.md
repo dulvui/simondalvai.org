@@ -1,5 +1,5 @@
 +++
-title = "Ball2Box"
+title = "Privacy Policy - Ball2Box"
 template = "privacy-policy.html"
 date = 2022-12-04
 aliases = ["privacy-policies/ball2box","privacy-policies/ball2box.html"]
