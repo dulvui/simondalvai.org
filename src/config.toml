@@ -1,5 +1,6 @@
 # The URL the site will be built for
 base_url = "https://simondalvai.com"
+title = "Simon Dalvai"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "../docs"
