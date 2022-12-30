@@ -2,6 +2,7 @@
 title = "Automated Godot iOS upload"
 date = 2022-12-29
 updated = 2022-12-30
+aliases = ["giu"]
 +++
 
 Github Actions allow you to automate repetitive tasks, like exporting your game for iOS and uploading it to the App Store.
