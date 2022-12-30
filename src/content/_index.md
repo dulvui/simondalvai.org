@@ -4,7 +4,7 @@ template = "index.html"
 [extra]
 image = "img/me.webp"
 subtitle = "Hello."
-introduction = "My name is Simon Dalvai."
+introduction = "I'm Simon Dalvai."
 github = "https://github.com/dulvui"
 githubsponsors = "https://github.com/sponsors/dulvui"
 linkedin = "https://www.linkedin.com/in/simon-dalvai/"
