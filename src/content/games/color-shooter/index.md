@@ -7,6 +7,7 @@ aliases = ["color-shooter","color-shooter.html"]
 icon = 'img/colorshooter.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.centrum'
 type = 'libGDX'
+repo = "https://github.com/dulvui/color-shooter"
 +++
 
 My first developed game, so don't expect much. 
