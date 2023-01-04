@@ -22,7 +22,6 @@ First a check is made to see if the action actually runs on a macOS runner, beca
     run: exit 1
 ```
 
-
 Then a cache is created using the `actions/cache@v3` action. This cache saves the Godot Engine, configurations and export templates in a persistent memory. This saves time and Github's bandwidth. A new cache is created if the `godot-version` of the inputs changes.
 ```yml
 - name: Cache Godot files
