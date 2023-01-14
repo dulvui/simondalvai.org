@@ -5,7 +5,7 @@ updated = 2023-01-15
 aliases = ["gau"]
 +++
 
-In my last blog [post](godot-ios-upload) I explained how my Github Action to automatically export and upload Godot iOS games to the Apple App Store works.
+In my last blog [post](@/blog/godot-ios-upload.md) I explained how my Github Action to automatically export and upload Godot iOS games to the Apple App Store works.
 I created the same action for Android and the Google Play Store and here I will explain how that works.
 I'm using also this action already in my Godot games like [Pocket Broomball](https://github.com/dulvui/pocket-broomball/blob/main/.github/workflows/upload-android.yml) or [Ball2Box](https://github.com/dulvui/ball2box/blob/main/.github/workflows/upload-android.yml).  
 You can find the repo of the action on [Github](https://github.com/dulvui/godot-android-upload).
