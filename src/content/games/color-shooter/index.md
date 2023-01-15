@@ -2,7 +2,7 @@
 title = 'Color Shooter'
 description = 'Shoot the colors!'
 date = 2019-09-29
-aliases = ["color-shooter","color-shooter.html"]
+aliases = ["color-shooter","color-shooter.html","cs"]
 [extra]
 icon = 'img/colorshooter.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.centrum'

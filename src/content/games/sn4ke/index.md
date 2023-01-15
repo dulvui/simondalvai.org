@@ -2,7 +2,7 @@
 title = 'Sn4ke'
 description = "With unique pixel art worlds."
 date = 2020-09-29
-aliases = ["sn4ke","sn4ke.html"]
+aliases = ["sn4ke","sn4ke.html","sn"]
 [extra]
 icon = 'img/sn4ke.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.snake'

@@ -2,7 +2,7 @@
 title = 'Ball2Box'
 description = "Swipe the ball into the box."
 date = 2022-09-29
-aliases = ["ball2box","ball2box.html"]
+aliases = ["ball2box","ball2box.html","b2b"]
 [extra]
 icon = 'img/ball2box.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.ultimatetoss'
