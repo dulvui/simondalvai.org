@@ -15,13 +15,13 @@
 
   {% block seo %}
   {% if page.description %}
-  <meta property="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.description }}">
   {% elif page.title %}
-  <meta property="description" content="{{ page.title }}">
+  <meta name="description" content="{{ page.title }}">
   {% elif section.description %}
-  <meta property="description" content="{{ section.description }}">
+  <meta name="description" content="{{ section.description }}">
   {% elif section.title %}
-  <meta property="description" content="{{ section.title }}">
+  <meta name="description" content="{{ section.title }}">
   {% endif %}
   {% endblock seo %}
 
