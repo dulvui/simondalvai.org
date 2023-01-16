@@ -1,5 +1,6 @@
 +++
 title = "Simon Dalvai"
+description = "Simon Dalvai's personal website"
 template = "index.html"
 [extra]
 image = "img/me.webp"

@@ -1,5 +1,6 @@
 +++
 title="Games"
+description = "Open Source games with zero ads and zero tracking"
 render=true
 sort_by = "date"
 template = "games.html"
