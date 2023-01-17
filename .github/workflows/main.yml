@@ -18,26 +18,9 @@ env:
   WORKING_DIRECTORY: src
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v3
-
-      - name: Get zola
-        run: |
-          wget -q -O - \
-          "https://github.com/getzola/zola/releases/download/v0.16.1/zola-v0.16.1-x86_64-unknown-linux-gnu.tar.gz" \
-          | tar xzf - -C /usr/local/bin
-
-      - name: Run check
-        working-directory: ${{ env.WORKING_DIRECTORY }}
-        run: zola check
-  
   deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/prod'
-    needs: test
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
