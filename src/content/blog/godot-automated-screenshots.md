@@ -5,15 +5,15 @@ updated = 2023-01-22
 aliases = ["gas"]
 +++
 
-To publish a game to Apple App Store or Google Play Store screenshots of the game are needed.
-For Android you need screenshots of mobile and a tablet and for iOS you need a screenshot of every currently supported device.  
+To publish a game to Apple App Store or Google Play Store, screenshots of the game are needed.
+For Android you need screenshots of mobile devices and tablets and for iOS you need a screenshot of each currently supported device.  
 With a little coding this boring and repetitive task can be automated.
-Of course it depends a lot on the type of game and its mechanics, if its even possible to automate this task.
+Of course, it depends a lot on the type of game and its mechanics, if its even possible to automate this task.
 But if it's a simple game like [Ball2Box](@/games/ball2box/index.md) it will be easy. 
 
 
 ## How does it work
-First the resolutions of the devices are defined.
+First, the resolutions of the devices are defined.
 The iPad screenshots can be reused as 7 inch and 10 inch tablet screenshots for Android.
 ```python
 const resolutions = {
@@ -25,7 +25,7 @@ const resolutions = {
 }
 ```
 
-Then the paths of the scenes that shall be used for the screenshots are defined.
+Then the paths of the scenes, that should be used for the screenshots, are defined.
 ```python
 const scenes = [
 	"res://src/levels/Level1.tscn",
@@ -54,13 +54,13 @@ func _change_scene(scene_path):
 	scene.get_node("UI/Menu").hide()
 ```
 
-With the following OS function call we can change the resolution of the screen while the game is executed.
+With the following OS function call, we can change the resolution of the screen while the game is executed.
 ```python
 OS.set_window_size(resolutions.get(resolution))
 ```
 
-Then we get the texture data of the screen whole screen with the get_texture() Viewport function call.
-Since the image would be upside down we flip it first and then we can save it on the file system.
+Then we get the texture data of the whole screen with the get_texture() Viewport function call.
+Since the image would be upside down, we flip it first and then we can save it on the file system.
 ```python
 var image = get_viewport().get_texture().get_data().get_rect(fullscreen)
 image.flip_y()
@@ -68,8 +68,8 @@ image.save_png("../screenshots/" + resolution + "-" + str(scene_counter) + ".png
 ```
 
 ## The whole code
-Here the whole code that iterates over the resolutions and scenes and takes the screenshots.
-It can be executed with hte "Play custom scene" button on the right top corner.
+Here, the whole code that iterates over the resolutions and scenes and takes the screenshots.
+It can be executed with the "Play custom scene" button on the right top corner of the Godot editor.
 ```python
 extends Spatial
 
