@@ -4,6 +4,7 @@ description = "Remember the colors."
 date = 2019-10-29
 aliases = ["whatcolor","whatcolor.html","wc"]
 [extra]
+released = true
 icon = 'img/whatcolor.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.whatcolor'
 type = 'libGDX'

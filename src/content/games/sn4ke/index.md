@@ -4,6 +4,7 @@ description = "With unique pixel art worlds."
 date = 2020-09-29
 aliases = ["sn4ke","sn4ke.html","sn"]
 [extra]
+released = true
 icon = 'img/sn4ke.svg'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.snake'
 appstore_link = 'https://apps.apple.com/app/sn4ke/id1626543157'
