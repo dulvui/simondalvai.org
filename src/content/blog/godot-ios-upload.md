@@ -1,5 +1,6 @@
 +++
 title = "Automated Godot iOS upload"
+description = "Automatically upload your iOS Godot game to the Apple App Store with Github Actions"
 date = 2022-12-29
 updated = 2023-01-05
 aliases = ["giu"]

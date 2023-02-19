@@ -1,5 +1,6 @@
 +++
 title = "Godot Engine vs libGDX"
+description = "My personal experience with libGDX and Godot"
 date = 2023-02-12
 updated = 2023-02-12
 aliases = ["gvl"]

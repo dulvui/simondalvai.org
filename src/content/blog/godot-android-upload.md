@@ -1,5 +1,6 @@
 +++
 title = "Automated Godot Android upload"
+description = "Automatically upload your Android Godot game to the Google Play Store with Github Actions"
 date = 2023-01-15
 updated = 2023-01-17
 aliases = ["gau"]

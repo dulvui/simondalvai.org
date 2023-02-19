@@ -1,5 +1,6 @@
 +++
 title = "Godot - Automated screenshots"
+description = "Automatically take screenshots of you Godot game for all possible devices with a tiny script"
 date = 2023-01-22
 updated = 2023-01-22
 aliases = ["gas"]
