@@ -1,5 +1,6 @@
 +++
 title = "Donate"
+description = "Support my work with your donation"
 template = "donate.html"
 +++
 You can **support me** by making a donation 💝  
