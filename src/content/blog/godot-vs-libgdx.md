@@ -1,10 +1,10 @@
 +++
 title = "Godot Engine vs libGDX"
 description = "My personal experience with libGDX and Godot"
-date = 2023-02-12
-updated = 2023-02-12
+date = 2023-02-26
+updated = 2023-02-26
 aliases = ["gvl"]
-draft = true
+draft = false
 +++
 
 I create now games since 2018 and here I want to share my experience with [libGDX](https://libgdx.com/) and [Godot](https://godotengine.org/).
