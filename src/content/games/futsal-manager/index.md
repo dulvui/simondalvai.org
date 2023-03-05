@@ -5,7 +5,7 @@ date = 2023-02-15
 aliases = ["fsm"]
 [extra]
 released = false
-icon = 'img/futsal-manager.webp'
+icon = 'img/game-icons/futsal-manager.webp'
 playstore_link = ''
 appstore_link = ''
 type = 'Godot'
