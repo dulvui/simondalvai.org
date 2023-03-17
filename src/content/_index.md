@@ -17,5 +17,5 @@ reddit = "https://www.reddit.com/user/dulvui"
 privacypolicy = "privacy-policies.md"
 +++
 
-I create  **open source** games for **free** with **zero ads** and **zero tracking**.  
-I also write a **blog** about game development and more.
+I create **Free and Open Source** games with **zero ads** and **zero tracking**.  
+I also write a **blog** about software and game development.
