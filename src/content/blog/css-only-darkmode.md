@@ -2,15 +2,15 @@
 title = "CSS only dark mode"
 description = "Create dark mode with CSS only and no JS by using css media queries"
 date = 2023-03-19
-updated = 2023-03-19
+updated = 2023-03-20
 aliases = ["cod"]
 +++
 
-Last week I implemented dark mode on my website without using any JS and only modern CSS media queries.  
+Last week I implemented dark mode on my website, without using any JS and only modern CSS media queries.  
 It was pretty sure, that dark mode can only be implemented using JS, but a quick online search proved me wrong.
 
 ## Lets make it dark
-This tiny css one liner can define how your site looks on a device with dark mode set in the browser settings.
+This css one liner can define how your site looks on a device with dark mode set in the browser settings.
 ```css
 @media (prefers-color-scheme: dark)
 ```
@@ -20,7 +20,7 @@ Or if your main style is dark mode, you can define how the light mode will look.
 @media (prefers-color-scheme: light)
 ```
 
-And with this little scss and the media query you can set the background and font color of the whole body of your html.  
+And with this little scss and media query you can set dynamically the background and font color of the whole body of your html.  
 ```scss
 $background-color-light: #FDF6E3;
 $background-color-dark: #002b36;
@@ -42,9 +42,9 @@ Of course, you can't switch between dark mode and light mode with a button (or a
 But anyway I can't remember the last time I used a button like that and websites should follow directly the system settings.
 
 ## How to test it
-To test it you can simply switch the color theme of your browser in the settings and voilà: the site changes automatically colors.  
+To test it, you can simply switch the color theme of your browser in the settings and voilà: the site changes automatically colors.  
 For this website I used the [solarized](https://ethanschoonover.com/solarized/) theme.
-It is my favorite theme and I use the light mode everywhere I can.  
+It is my favorite theme and I use the solarized light theme everywhere I can.  
 
 
-So here the internet proved me again that a simple website can have a lot of cool features, without using JS at all.u
+So here, the internet proved me again, that a simple website can have a lot of cool features, without using JS at all.
