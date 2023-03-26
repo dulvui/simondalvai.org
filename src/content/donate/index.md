@@ -2,6 +2,8 @@
 title = "Donate"
 description = "Support my work with your donation"
 template = "donate.html"
+date = 2023-03-26
+updated = 2023-03-26
 +++
 You can **support me** by making a donation 💝  
 Only a **few bucks** 💸 make already a big difference to keep me motivated and to cover some costs like the **yearly 99€ Apple developer fee**.

@@ -1,8 +1,10 @@
 +++
 title = "Blog"
 description = "Blog about Godot and libGDX game development and more"
-sort_by = "date"
 template = "blog.html"
+sort_by = "date"
+date = 2023-03-26
+updated = 2023-03-26
 page_template = "blog-page.html"
 +++
 
