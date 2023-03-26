@@ -7,4 +7,4 @@ page_template = "blog-page.html"
 +++
 
 I write about game development with **Godot Engine** and **libGDX**.
-Sometimes also about other technical topics of my interest like **Github Actions** or **Free Software**.
+Sometimes also about other technical topics.
