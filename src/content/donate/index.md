@@ -8,10 +8,10 @@ updated = 2023-03-26
 You can **support me** by making a donation 💝  
 Only a **few bucks** 💸 make already a big difference to keep me motivated and to cover some costs like the **yearly 99€ Apple developer fee**.
 
-🍺 Get me a beer on [PayPal](https://paypal.me/simondalvai)  
-☕ Buy me a coffee on [Ko-fi](https://ko-fi.com/simondalvai)  
+☕ Buy me a coffee with [PayPal](https://paypal.me/simondalvai) or [Card](https://donate.stripe.com/eVaeXof2l4iy33W6oo)  
 🤗 Support me on Github [Sponsors](https://github.com/sponsors/dulvui)    
 💰 Empty your pockets on [Liberapay](https://liberapay.com/dulvui)  
+<!-- ☕ Buy me a coffee on [Stripe](https://donate.stripe.com/eVaeXof2l4iy33W6oo)   -->
 
 
 ## No cash? No problem!
