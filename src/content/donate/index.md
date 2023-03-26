@@ -4,7 +4,7 @@ description = "Support my work with your donation"
 template = "donate.html"
 +++
 You can **support me** by making a donation 💝  
-Only a **few bucks** 💸 already make a big difference to keep me motivated and to cover some costs like the **yearly 99€ Apple developer fee**.
+Only a **few bucks** 💸 make already a big difference to keep me motivated and to cover some costs like the **yearly 99€ Apple developer fee**.
 
 🍺 Get me a beer on [PayPal](https://paypal.me/simondalvai)  
 ☕ Buy me a coffee on [Ko-fi](https://ko-fi.com/simondalvai)  
