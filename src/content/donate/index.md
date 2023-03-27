@@ -15,8 +15,9 @@ Only a **few bucks** 💸 make already a big difference to keep me motivated and
 
 
 ## No cash? No problem!
-⭐ Star my repos on [Github](https://github.com/dulvui) or [Codeberg](https://codeberg.org/dulvui)  
+⭐ Rate and review my [games](/games)   
 🕹️ Tell your friends about my [games](/games)   
+🌟 Star my repos on [Github](https://github.com/dulvui) or [Codeberg](https://codeberg.org/dulvui)  
 📚 Share my blog [posts](/blog)  
 
 ## Affiliate links
