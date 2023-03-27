@@ -19,7 +19,6 @@ Only a **few bucks** 💸 make already a big difference.
 📚 Share my blog [posts](/blog)  
 
 ## Current costs
-🥹 I'm actually far away from drinking coffee
 
 | Cause                    |     Cost |
 | :----------------------- | -------: |
@@ -31,7 +30,7 @@ Only a **few bucks** 💸 make already a big difference.
 | **Donations**            |   **5€** |
 
 <div class="progress" style="--percentage: .9844%;"> 
-    <div class="progress_text">317€ to go</div>
+    <div class="progress_text">317€ to break even</div>
     <div class="progress_bar"></div>
 </div>
 
