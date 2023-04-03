@@ -5,7 +5,7 @@ date = 2019-10-29
 aliases = ["whatcolor","whatcolor.html","wc"]
 [extra]
 released = true
-icon = 'img/game-icons/whatcolor.svg'
+icon = 'img/game-icons/whatcolor.webp'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.whatcolor'
 type = 'libGDX'
 +++

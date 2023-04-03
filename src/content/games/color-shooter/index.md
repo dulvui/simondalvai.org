@@ -5,7 +5,7 @@ date = 2019-09-29
 aliases = ["color-shooter","color-shooter.html","cs"]
 [extra]
 released = true
-icon = 'img/game-icons/colorshooter.svg'
+icon = 'img/game-icons/colorshooter.webp'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.centrum'
 type = 'libGDX'
 repo = "https://github.com/dulvui/color-shooter"

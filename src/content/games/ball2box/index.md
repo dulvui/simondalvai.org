@@ -5,7 +5,7 @@ date = 2022-09-29
 aliases = ["ball2box","ball2box.html","b2b"]
 [extra]
 released = true
-icon = 'img/game-icons/ball2box.svg'
+icon = 'img/game-icons/ball2box.webp'
 fdroid_link = 'https://f-droid.org/en/packages/com.simondalvai.ball2box/'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.ultimatetoss'
 appstore_link = 'https://apps.apple.com/us/app/ball2box/id1522604143'
