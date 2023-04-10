@@ -10,6 +10,7 @@ fdroid_link = 'https://f-droid.org/en/packages/com.simondalvai.ball2box/'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.ultimatetoss'
 appstore_link = 'https://apps.apple.com/us/app/ball2box/id1522604143'
 github_link = 'https://github.com/dulvui/ball2box/releases/'
+itchio_link= 'https://simondalvai.itch.io/ball2box'
 
 type = 'Godot'
 repo = "https://github.com/dulvui/ball2box"

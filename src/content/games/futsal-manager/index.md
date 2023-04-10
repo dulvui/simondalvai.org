@@ -8,6 +8,8 @@ released = false
 icon = 'img/game-icons/futsal-manager.webp'
 playstore_link = ''
 appstore_link = ''
+github_link = 'https://github.com/dulvui/futsal-manager/releases/'
+
 type = 'Godot'
 repo = "https://github.com/dulvui/futsal-manager"
 +++
