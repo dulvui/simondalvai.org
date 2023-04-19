@@ -68,7 +68,7 @@ Thus, I removed all third party libraries and hope to make a few bucks only with
 Godot works well on Android and an empty game is about 8 MB big.
 My games are between 30 and 50 MB big, but most of the memory comes from the assets.
 And of course, I also created a Github Action for Godot to export and upload your game to the Google Play Store  
-https://github.com/dulvui/godot-android-upload  
+https://github.com/dulvui/godot-android-export  
 
 
 ## iOS

@@ -9,7 +9,7 @@ aliases = ["gau"]
 In my last blog [post](@/blog/godot-ios-upload.md) I explained how my Github Action, to automatically export and upload Godot iOS games to the Apple App Store, works.
 I created the same action for Android and the Google Play Store and in this post I will explain how it works.
 I'm using also this action already in my Godot games, like [PocketBroomball](https://github.com/dulvui/pocket-broomball/blob/main/.github/workflows/upload-android.yml) or [Ball2Box](https://github.com/dulvui/ball2box/blob/main/.github/workflows/upload-android.yml).  
-You can find the repo of the action on [Github](https://github.com/dulvui/godot-android-upload).
+You can find the repo of the action on [Github](https://github.com/dulvui/godot-android-export).
 
 ## How does this action work?
 The first step is setting up Java for the Github runner with the `actions/setup-java@v3` action. This downloads everything needed and sets the environment variables like JAVA_HOME etc.
@@ -96,5 +96,5 @@ And now we can run the final step by uploading the exported game to the Google P
 
 The Android action is quite simpler than the iOS action and also easier to maintain because you don't have to care about yearly expiring Developer Certificates and Provisioning Profiles. Probably it is because I'm simply too unexperienced with iOS development and thus it is a pain every time I need to renew everything. But automating, at least the export and upload, is a big help, especially as a solo developer. It saves me a lot of time and brings much more joy when you can upload everything with a simple `git push`.
 
-You can find the complete action and instructions on [Github](https://github.com/dulvui/godot-android-upload/blob/main/action.yml).  
+You can find the complete action and instructions on [Github](https://github.com/dulvui/godot-android-export/blob/main/action.yml).  
 If you have problems or need help with the action, simply open an issue in the repository.
