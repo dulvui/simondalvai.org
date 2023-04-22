@@ -1,16 +1,17 @@
 +++
 title = "How to publish a Godot Engine game to F-Droid"
 description = "How to build and publish an Open Source Godot Engine game to F-Droid"
-date = 2023-03-11
-updated = 2023-03-11
-draft = true
+date = 2023-04-22
+updated = 2023-04-22
+draft = false
 aliases = ["gfp"]
 +++
 
 [F-Droid](https://f-droid.org) is an awesome app that gives you access to thousands of Free and Open Source Software apps and games. 
 It also respects your privacy, requires no login and lets you know if an app has anti-features like tracking, ads, proprietary assets or if it depends on the proprietary Google Play Services.
-Here you can find a list of what F-Droid considers as Anti-Features: https://f-droid.org/docs/Anti-Features  
-Last month I was able to publish [Ball2Box](@/games/ball2box/index.md) to [F-Droid](https://f-droid.org/en/packages/com.simondalvai.ball2box/) and here I will share the steps that are needed to do so.  
+If an app has ads or tracks you, it is marked as [AntiFeatures](https://f-droid.org/docs/Anti-Features).
+<img class="blog-image" src="antifeatures.png" alt="AntiFeatures example">  
+Last month I was able to publish [Ball2Box](@/games/ball2box/index.md) to [FDroid](https://f-droid.org/en/packages/com.simondalvai.ball2box/) and here I will share the steps that are needed to do so.  
 
 ## Requirements
 To publish a [Godot Engine](https://godotengine.org) game to F-Droid you'll need an Open Source game with the source code published on a public git repository.
