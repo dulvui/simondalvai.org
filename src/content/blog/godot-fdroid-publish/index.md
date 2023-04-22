@@ -104,6 +104,6 @@ CurrentVersion: 2.2.6
 CurrentVersionCode: 44
 ```
 
-<!-- If you have questions feel free to comment on [Mastodon] or write me an email. -->
+If you have questions feel free to comment on [Mastodon](https://mastodon.social/@dulvui/110241242233980633) or write me an email.
 
 
