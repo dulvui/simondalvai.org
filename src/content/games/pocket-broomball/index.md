@@ -24,7 +24,7 @@ The coolest winter sport has finally come to your phone!
 - International Women League
 - International League
 
-If you want to add <b>your team</b> to the game, send me a mail at <b>info@simondalvai.com</b>  
+If you want to add <b>your team</b> to the game, send me a mail at <a href="mailto:info@simondalvai.com?subject=Pocket Broomball: new team">info@simondalvai.com</a>  
 
 🧹 100+ real-world teams  
 🌈 20+ different styled balls to collect  
@@ -33,6 +33,5 @@ If you want to add <b>your team</b> to the game, send me a mail at <b>info@simon
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
 🛑 No permissions needed  
-📖 Open Source on https://github.com/dulvui/pocket-broomall  
 
 Created with Godot Engine 3
