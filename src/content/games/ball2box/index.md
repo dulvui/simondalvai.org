@@ -25,5 +25,5 @@ Can you get all three stars on all levels?
 📺 No ads  
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
-🛑 No permissions needed  
+🛑 No permissions  
 👨‍💻 Created with Godot Engine 3

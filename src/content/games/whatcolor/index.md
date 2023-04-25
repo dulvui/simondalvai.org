@@ -10,7 +10,27 @@ playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.whatc
 type = 'libGDX'
 +++
 
-CLICK THE COLORS!  
-Remember the pattern you'll see, because one color will disappear!  
-This game is pure memory training for your brain 🧠  
-With 60 different color patterns ready to be memorized!
+<b>Remember</b> the pattern you'll see, because one color will <b>disappear</b>!
+<b>Click</b> the missing color on the buttons under the pattern.  
+This game is pure memory training for your <b>brain</b> 🧠
+
+Train your <b>eye-hand coordination</b> by searching for the missing color!
+But be fast, because the time is running out ⌛  
+Every correct color gives you 2 more seconds for the next one.   
+It might seem easy at the beginning, but it's hard to stay <b>focused</b> and <b>concentrated</b>! 
+So improve your <b>concentration</b> by playing this memory training game!  
+Play every day and see how your <b>memory</b> and <b>focus</b> gets faster and better!
+
+🌈 60 patterns  
+💾 Only 3MB  
+📡 Offline game  
+📺 No ads  
+💸 No In-App purchases  
+🕵️‍♀️ No user tracking  
+🛑 No permissions  
+📖 Open Source on https://github.com/dulvui/whatcolor  
+👨‍💻 Created with libGDX  
+
+Made with love by Simon Dalvai
+https://simondalvai.com
+info@simondalvai.com

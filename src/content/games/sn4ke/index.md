@@ -22,5 +22,5 @@ What will be your high score?
 📺 No ads  
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
-🛑 No permissions needed  
+🛑 No permissions  
 👨‍💻 Created with libGDX
