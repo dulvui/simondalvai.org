@@ -28,7 +28,6 @@ Play every day and see how your <b>memory</b> and <b>focus</b> gets faster and b
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
 🛑 No permissions  
-📖 Open Source on https://github.com/dulvui/whatcolor  
 👨‍💻 Created with libGDX  
 
 Made with love by Simon Dalvai
