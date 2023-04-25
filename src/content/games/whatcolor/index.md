@@ -29,7 +29,3 @@ Play every day and see how your <b>memory</b> and <b>focus</b> gets faster and b
 🕵️‍♀️ No user tracking  
 🛑 No permissions  
 👨‍💻 Created with libGDX  
-
-Made with love by Simon Dalvai
-https://simondalvai.com
-info@simondalvai.com
