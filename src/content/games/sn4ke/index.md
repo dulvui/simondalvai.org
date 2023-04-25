@@ -23,5 +23,4 @@ What will be your high score?
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
 🛑 No permissions needed  
-
-Created with libGDX  
+👨‍💻 Created with libGDX

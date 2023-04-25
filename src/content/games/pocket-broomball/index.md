@@ -33,5 +33,4 @@ If you want to add <b>your team</b> to the game, send me a mail at <a href="mail
 💸 No In-App purchases  
 🕵️‍♀️ No user tracking  
 🛑 No permissions needed  
-
-Created with Godot Engine 3
+👨‍💻 Created with Godot Engine 3
