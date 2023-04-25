@@ -17,14 +17,14 @@ repo = "https://github.com/dulvui/ball2box"
 +++
 
 Swipe to shoot the ball into the box in <b>over 100 levels</b> with only one finger.
-Can you get all three stars on all levels?
+Can you get all three stars on all levels?  
 
-🕹️ <b>100+</b> levels and more coming soon...
-🌈 <b>20+<b> different styled balls to collect
-📡 Offline game: No internet connection needed
-📺 No ads - Distraction free
-💸 No In-App purchases
-🕵️‍♀️ Privacy friendly: No user tracking
-🛑 No permissions needed
+🕹️ <b>100+</b> levels and more coming soon...  
+🌈 <b>20+</b> different styled balls to collect  
+📡 Offline game: No internet connection needed  
+📺 No ads - Distraction free  
+💸 No In-App purchases  
+🕵️‍♀️ Privacy friendly: No user tracking  
+🛑 No permissions needed  
 
 Created with Godot Engine 3
