@@ -18,10 +18,10 @@ What will be your high score?
 🕹️ 60 levels  
 🌈 4 different color themes  
 💾 Only 3MB on Android  
-📡 Offline game: No internet connection needed  
+📡 Offline game   
 📺 No ads  
 💸 No In-App purchases  
-🕵️‍♀️ Privacy friendly: No user tracking  
+🕵️‍♀️ No user tracking  
 🛑 No permissions needed  
 
 Created with libGDX  
