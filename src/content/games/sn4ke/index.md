@@ -12,14 +12,16 @@ type = 'libGDX'
 repo = "https://github.com/dulvui/pocket-broomball"
 +++
 
-👑 Become the Snake Master 👑  
-It feels like playing on your old Nokia 3310 or 1100, but with modern pixel graphics and new levels!
+Play the old school classic Snake with pixel retro look, modern swipe controls and 60 unique Levels!  
+What will be your high score?
 
 🕹️ 60 levels  
-🛑 No Ads and no user tracking  
-🌈 4 snake colors  
-💾 Only 3MB Download size!  
-😻 Classic gameplay with retro look  
-💾 Small App size and RAM memory usage  
-🌎 No internet connection needed  
-🔋 Battery optimized, so you can play with no worries!  
+🌈 4 different color themes  
+💾 Only 3MB on Android
+📡 Offline game: No internet connection needed  
+📺 No ads  
+💸 No In-App purchases  
+🕵️‍♀️ Privacy friendly: No user tracking  
+🛑 No permissions needed  
+
+Created with libGDX  
