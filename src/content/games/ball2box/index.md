@@ -22,7 +22,7 @@ Can you get all three stars on all levels?
 🕹️ 100+ levels and more coming soon...  
 🌈 20+ different styled balls to collect  
 📡 Offline game: No internet connection needed  
-📺 No ads - Distraction free  
+📺 No ads  
 💸 No In-App purchases  
 🕵️‍♀️ Privacy friendly: No user tracking  
 🛑 No permissions needed  
