@@ -16,7 +16,15 @@ type = 'Godot'
 repo = "https://github.com/dulvui/ball2box"
 +++
 
-Can you get all three stars in all levels?  
-Swipe to toss the ball and hit the box in over 100 levels. Only one finger needed so it's the perfect game for school or other boring tasks during your day.  
-Like basketball but with one finger!  
-Get it now and start dunking.
+Swipe to shoot the ball into the box in <b>over 100 levels</b> with only one finger.
+Can you get all three stars on all levels?
+
+🕹️ <b>100+</b> levels and more coming soon...
+🌈 <b>20+<b> different styled balls to collect
+📡 Offline game: No internet connection needed
+📺 No ads - Distraction free
+💸 No In-App purchases
+🕵️‍♀️ Privacy friendly: No user tracking
+🛑 No permissions needed
+
+Created with Godot Engine 3
