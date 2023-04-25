@@ -17,7 +17,7 @@ What will be your high score?
 
 🕹️ 60 levels  
 🌈 4 different color themes  
-💾 Only 3MB on Android
+💾 Only 3MB on Android  
 📡 Offline game: No internet connection needed  
 📺 No ads  
 💸 No In-App purchases  
