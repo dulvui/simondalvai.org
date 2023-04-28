@@ -8,7 +8,7 @@ aliases = ["gfd"]
 
 [F-Droid](https://f-droid.org) is an awesome app that gives you access to thousands of Free and Open Source Software apps and games. 
 It also respects your privacy, requires no login and lets you know if an app has anti-features like tracking, ads, proprietary assets or if it depends on the proprietary Google Play Services.
-If an app has ads or tracks you, it is marked as [AntiFeatures](https://f-droid.org/docs/Anti-Features).
+If an app has ads or tracks you, it is marked as [AntiFeatures](https://f-droid.org/docs/Anti-Features).  
 <img class="blog-image" src="antifeatures.png" alt="AntiFeatures example">  
 I was able to publish [Ball2Box](@/games/ball2box/index.md) to F-Droid and here I will share the steps that are needed to do so.  
 [Here](https://f-droid.org/en/packages/com.simondalvai.ball2box/) you can find the published game.
