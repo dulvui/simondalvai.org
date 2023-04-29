@@ -1,5 +1,5 @@
 +++
-title = "How to publish a Godot 3.x game to FDroid"
+title = "How to publish Godot 3 to F-Droid"
 description = "How to build and publish an Open Source Godot Engine 3.x game to F-Droid"
 date = 2023-04-22
 updated = 2023-04-22

@@ -19,4 +19,3 @@ privacypolicy = "privacy-policies.md"
 +++
 
 I create **Free and Open Source** games with **zero ads** and **zero tracking**.  
-I also write a **blog** about software and game development.
