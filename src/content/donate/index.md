@@ -27,10 +27,11 @@ Only a **few bucks** 💸 make already a big difference.
 | Apple Developer Fee 2022 |      99€ |
 | Apple Developer Fee 2023 |      99€ |
 | **Total**                | **322€** |
-| **Donations**            |   **5€** |
+| **Donations**            |   **12,50€** |
 
-<div class="progress" style="--percentage: .9844%;"> 
-    <div class="progress_text">317€ to break even</div>
+<!-- percentage = donations / total * 100 -->
+<div class="progress" style="--percentage: 3.881987%;"> 
+    <div class="progress_text">309,50€ to break even</div>
     <div class="progress_bar"></div>
 </div>
 
