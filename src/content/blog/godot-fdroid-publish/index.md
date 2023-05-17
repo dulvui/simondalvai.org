@@ -4,6 +4,8 @@ description = "How to build and publish an Open Source Godot Engine 3.x game to 
 date = 2023-04-22
 updated = 2023-04-22
 aliases = ["gfd"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110241242233980633"
 +++
 
 [F-Droid](https://f-droid.org) is an awesome app that gives you access to thousands of Free and Open Source Software apps and games. 
@@ -104,6 +106,5 @@ CurrentVersion: 2.2.6
 CurrentVersionCode: 44
 ```
 
-If you have questions feel free to comment on [Mastodon](https://mastodon.social/@dulvui/110241242233980633) or write me an email.
 
 
