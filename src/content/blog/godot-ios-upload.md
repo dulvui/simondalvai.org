@@ -4,6 +4,8 @@ description = "Automatically upload your iOS Godot game to the Apple App Store w
 date = 2022-12-29
 updated = 2023-01-05
 aliases = ["giu"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110391913791345026"
 +++
 
 Github Actions allow you to automate repetitive tasks, like exporting your game for iOS and uploading it to the App Store.

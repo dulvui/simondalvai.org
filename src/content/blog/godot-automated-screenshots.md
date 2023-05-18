@@ -4,6 +4,8 @@ description = "Automatically take screenshots of you Godot game for all possible
 date = 2023-01-22
 updated = 2023-01-22
 aliases = ["gas"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110391932466547214"
 +++
 
 To publish a game to Apple App Store or Google Play Store, screenshots of the game are needed.
