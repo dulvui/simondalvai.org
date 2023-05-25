@@ -8,6 +8,7 @@ released = true
 icon = 'img/game-icons/pocketbroomball.webp'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.broomball'
 appstore_link = 'https://apps.apple.com/app/pocket-broomball/id1511009171'
+itchio_link= 'https://simondalvai.itch.io/pocket-broomball'
 type = 'Godot'
 repo = "https://github.com/dulvui/pocket-broomball"
 +++
