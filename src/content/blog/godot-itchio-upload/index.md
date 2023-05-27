@@ -7,11 +7,8 @@ draft = true
 aliases = ["gio"]
 +++
 
-In my last blog [post](@/blog/godot-ios-upload.md) I explained how my Github Action, to automatically export and upload Godot iOS games to the Apple App Store, works.
-I created the same action for Android and the Google Play Store and in this post I will explain how it works.
-I'm using also this action already in my Godot games, like [PocketBroomball](https://github.com/dulvui/pocket-broomball/blob/main/.github/workflows/upload-android.yml) or [Ball2Box](https://github.com/dulvui/ball2box/blob/main/.github/workflows/upload-android.yml).  
-You can find the repo of the action on [Github](https://github.com/dulvui/godot-android-export).
-
+In this blog post I will explain on how to automatically upload a Godot game to itch.io using my 2 Github Actions [godot-html-export](https://github.com/dulvui/godot-html-export) to create a HTML export and [itchio-butler-upload](https://github.com/dulvui/itchio-butler-upload) to upload the game to [itch.io](https://itch.io).
+ 
 ## How does this action work?
 The first step is setting up Java for the Github runner with the `actions/setup-java@v3` action. This downloads everything needed and sets the environment variables like JAVA_HOME etc.
 ```yml
