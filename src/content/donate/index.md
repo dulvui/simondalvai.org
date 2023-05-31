@@ -30,10 +30,13 @@ Only a **few bucks** 💸 make already a big difference.
 | **Donations**            |   **12,50€** |
 
 <!-- percentage = donations / total * 100 -->
-<div class="progress" style="--percentage: 3.881987%;"> 
-    <div class="progress_text">309,50€ to break even</div>
+<div class="progress" style="--percentage: 5%;"> 
+    <div class="progress_text">305,50€ to break even</div>
     <div class="progress_bar"></div>
 </div>
 
 ## Donation messages
 💌 While donating you can leave me your name with a message that will be visible here.
+
+**Paul** donated 4€ on 31.05.2023  
+*"I just finished Ball2Box and I enjoyed it. Thanks for creating fun games that are free of ads and trackers. I will try the rest of the games :)"*  
