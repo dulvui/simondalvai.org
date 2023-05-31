@@ -27,7 +27,7 @@ Only a **few bucks** 💸 make already a big difference.
 | Apple Developer Fee 2022 |      99€ |
 | Apple Developer Fee 2023 |      99€ |
 | **Total**                | **322€** |
-| **Donations**            |   **12,50€** |
+| **Donations**            |   **16,50€** |
 
 <!-- percentage = donations / total * 100 -->
 <div class="progress" style="--percentage: 5%;"> 
