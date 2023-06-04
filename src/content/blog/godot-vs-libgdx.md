@@ -5,6 +5,8 @@ date = 2023-02-26
 updated = 2023-02-26
 aliases = ["gvl"]
 draft = false
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110486059574305335"
 +++
 
 I create games since 2018 and here I want to share my experience with [libGDX](https://libgdx.com/) and [Godot](https://godotengine.org/).
