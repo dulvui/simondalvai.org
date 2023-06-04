@@ -4,6 +4,8 @@ description = "Create dark mode with CSS only and no JS by using css media queri
 date = 2023-03-19
 updated = 2023-03-20
 aliases = ["cod"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110486078968483198"
 +++
 
 Last week I implemented dark mode on my website, without using any JS and only modern CSS media queries.  
