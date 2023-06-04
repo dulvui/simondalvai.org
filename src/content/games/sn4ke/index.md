@@ -10,6 +10,7 @@ playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.snake
 appstore_link = 'https://apps.apple.com/app/sn4ke/id1626543157'
 type = 'libGDX'
 repo = "https://github.com/dulvui/pocket-broomball"
+github_link = 'https://github.com/dulvui/sn4ke/releases/'
 +++
 
 Play the old school classic Snake with pixel retro look, modern swipe controls and 60 unique Levels!  
