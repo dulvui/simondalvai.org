@@ -8,7 +8,9 @@ released = true
 icon = 'img/game-icons/whatcolor.webp'
 playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.whatcolor'
 type = 'libGDX'
-repo = "https://github.com/dulvui/whatcolor"
+
+repo_github = "https://github.com/dulvui/whatcolor"
+repo_codeberg = "https://codeberg.org/dulvui/whatcolor"
 +++
 
 <b>Remember</b> the pattern you'll see, because one color will <b>disappear</b>!

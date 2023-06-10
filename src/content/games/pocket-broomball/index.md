@@ -11,7 +11,9 @@ appstore_link = 'https://apps.apple.com/app/pocket-broomball/id1511009171'
 itchio_link= 'https://simondalvai.itch.io/pocket-broomball'
 github_link = 'https://github.com/dulvui/pocket-broomball/releases/'
 type = 'Godot'
-repo = "https://github.com/dulvui/pocket-broomball"
+
+repo_github = "https://github.com/dulvui/pocket-broomball"
+repo_codeberg = "https://codeberg.org/dulvui/pocket-broomball"
 +++
 
 The coolest winter sport has finally come to your phone!  

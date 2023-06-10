@@ -13,7 +13,8 @@ github_link = 'https://github.com/dulvui/ball2box/releases/'
 itchio_link= 'https://simondalvai.itch.io/ball2box'
 
 type = 'Godot'
-repo = "https://github.com/dulvui/ball2box"
+repo_github = "https://github.com/dulvui/ball2box"
+repo_codeberg = "https://codeberg.org/dulvui/ball2box"
 +++
 
 Swipe to shoot the ball into the box in <b>over 100 levels</b> with only one finger.
