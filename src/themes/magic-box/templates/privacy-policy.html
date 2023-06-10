@@ -18,10 +18,10 @@
         {% if page.extra.repo_github %}
         You can find the source code on <a a href="{{ page.extra.repo_github | safe }}" target="_blank">GitHub</a>
         {% if page.extra.repo_codeberg %}
-        and <a a href="{{ page.extra.repo_codeberg | safe }}" target="_blank">Codeberg</a>
+        and <a a href="{{ page.extra.repo_codeberg | safe }}" target="_blank">Codeberg</a>.
+        {% else %}.
         {% endif %}
 </p>
-.
 {% endif %}
 </p>
 <p>This policy is effective as of {{ config.extra.privacy_policy_updated | safe | date(format="%d. %B %Y") }}. Any
