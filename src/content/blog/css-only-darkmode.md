@@ -1,5 +1,5 @@
 +++
-title = "CSS only dark mode"
+title = "CSS only dark mode without JS"
 description = "Create dark mode with CSS only and no JS by using css media queries"
 date = 2023-03-19
 updated = 2023-03-20
