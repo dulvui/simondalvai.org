@@ -6,6 +6,7 @@ updated = 2023-06-07
 aliases = ["gio"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110504878897747399"
+hackernews_link = "https://news.ycombinator.com/item?id=36466696"
 +++
 
 With the following two Github Actions you can export a Godot game to HTML and upload it to [itch.io](https://itch.io)

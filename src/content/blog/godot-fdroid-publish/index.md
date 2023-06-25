@@ -6,6 +6,7 @@ updated = 2023-04-22
 aliases = ["gfd"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110241242233980633"
+hackernews_link = "https://news.ycombinator.com/item?id=36466696"
 +++
 
 [F-Droid](https://f-droid.org) is an awesome app that gives you access to thousands of Free and Open Source Software apps and games. 
