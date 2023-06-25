@@ -6,6 +6,7 @@ updated = 2023-01-17
 aliases = ["gau"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391922548501588"
+hackernews_link = "https://news.ycombinator.com/item?id=36466436"
 +++
 
 In my last blog [post](@/blog/godot-ios-upload.md) I explained how my Github Action, to automatically export and upload Godot iOS games to the Apple App Store, works.
