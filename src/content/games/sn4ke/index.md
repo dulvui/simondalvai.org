@@ -1,6 +1,6 @@
 +++
 title = 'Sn4ke'
-description = "With unique pixel art worlds."
+description = "60 pixel levels"
 date = 2020-09-29
 aliases = ["sn4ke","sn4ke.html","snake", "sn"]
 [extra]

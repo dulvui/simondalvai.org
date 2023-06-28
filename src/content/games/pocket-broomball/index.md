@@ -1,6 +1,6 @@
 +++
 title = 'Pocket Broomball'
-description = "World's #1 Broomball game."
+description = "#1 Broomball game"
 date = 2021-09-29
 aliases = ["pocketbroomball","pocketbroomball.html","pb"]
 [extra]
