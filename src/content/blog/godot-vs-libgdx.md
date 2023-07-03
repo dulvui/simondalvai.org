@@ -19,7 +19,7 @@ So, since then I develop games only with Godot but still maintain my libGDX game
 **Note:** This is my own experience that I want to share with you but of course some things might be subjective and biased by my opinions.
 So, the best advice I can give is to try all game development environments that you want and find the one that works for you.   
 
-# libGDX
+## libGDX
 LibGDX is a simple but powerful Java library for cross-platform game development. 
 You can create 2D and 3D games for Windows, macOS, Linux, Android, iOS and HTML5. 
 You need to code everything in Java and there's no Editor like you get with Godot.
@@ -56,7 +56,7 @@ It seems that now this tool also has a Scene Composer, I haven't tried it yet.
 So you can even create your game's GUI with this tool without having to code.
 
 
-# Godot
+## Godot
 Godot is a also cross-platform game engine that has only a single executable without any other dependencies.
 You simply need to download the around 30 MB big executable and run it on your Linux, Windows or macOS machine.
 Since the editor itself is created with Godot and Godot can be exported to Android, there is even a running editor for Android.
@@ -80,7 +80,7 @@ Or you simply use my Github Actions that does the uploading automatically for yo
 https://github.com/dulvui/godot-ios-upload  
 
 
-# Final thoughts
+## Final thoughts
 If you know Java well and you want to take completely control of your game, then libGDX is perfect for you.
 But if you like fast development, creating your UI by mouse dragging and clicking, you should go for Godot.
 Both are powerful tools to create games.
