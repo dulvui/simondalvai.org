@@ -3,6 +3,7 @@ title = "Should developers have a blog?"
 description = "Why you should write a blog as a game developer and what are the benefits"
 date = 2023-07-03
 updated = 2023-07-03
+draft = true
 aliases = ["db"]
 +++
 
