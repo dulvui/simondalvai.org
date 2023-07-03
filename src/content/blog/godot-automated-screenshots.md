@@ -19,7 +19,7 @@ But if it's a simple game like [Ball2Box](@/games/ball2box/index.md) it will be 
 ## How does it work
 First, the resolutions of the devices are defined.
 The iPad screenshots can be reused as 7 inch and 10 inch tablet screenshots for Android.
-```swift
+```gd
 const resolutions = {
 	 "Android" :Vector2(1080,1920),
 	 "iPhone5.5" :Vector2(1242, 2208),
@@ -30,7 +30,7 @@ const resolutions = {
 ```
 
 Then the paths of the scenes, that should be used for the screenshots, are defined.
-```swift
+```gd
 const scenes = [
 	"res://src/levels/Level1.tscn",
 	"res://src/levels/Level10.tscn",
@@ -44,7 +44,7 @@ const scenes = [
 ```
 
 The following function changes the scene to the ones we defined in the last step and hides the menu.
-```swift
+```gd
 func _change_scene(scene_path):
 	if scene != null:
 		remove_child(scene)
@@ -59,13 +59,13 @@ func _change_scene(scene_path):
 ```
 
 With the following OS function call, we can change the resolution of the screen while the game is executed.
-```swift
+```gd
 OS.set_window_size(resolutions.get(resolution))
 ```
 
 Then we get the texture data of the whole screen with the get_texture() Viewport function call.
 Since the image would be upside down, we flip it first and then we can save it on the file system.
-```swift
+```gd
 var image = get_viewport().get_texture().get_data().get_rect(fullscreen)
 image.flip_y()
 image.save_png("../screenshots/" + resolution + "-" + str(scene_counter) + ".png")
@@ -74,7 +74,7 @@ image.save_png("../screenshots/" + resolution + "-" + str(scene_counter) + ".png
 ## The whole code
 Here, the whole code that iterates over the resolutions and scenes and takes the screenshots.
 It can be executed with the "Play custom scene" button on the right top corner of the Godot editor.
-```swift
+```gd
 extends Spatial
 
 const resolutions = {
