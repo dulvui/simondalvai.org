@@ -18,6 +18,12 @@ theme = "magic-box"
 
 [markdown]
 external_links_target_blank = true
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "solarized-light", filename = "light-code.css" },
+  { theme = "solarized-dark", filename = "dark-code.css" },
+]
 
 [extra]
 icon = "me.webp"
