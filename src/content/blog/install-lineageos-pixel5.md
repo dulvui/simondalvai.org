@@ -4,6 +4,9 @@ description = "How to install LineageOS 20 on Pixel 5 in 2023 with Debian. What 
 date = 2023-07-07
 updated = 2023-07-07
 aliases = ["ilp"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110677519803530168"
+hackernews_link = "https://news.ycombinator.com/item?id=36642508"
 +++
 
 I just bought a refurbished Pixel 5 to upgrade from my Samsung Galaxy S5.
