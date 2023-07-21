@@ -29,9 +29,9 @@ Another big motivator is that the Apple App Store removes all app that didn't ge
 So anyway I would have to do an update at least every 2 years, even if nothing changes in the game.
 
 I still need to say that libGDX is really great.
-I enjoyed the time and learn a lot.
-If you use it often and don't target iOS, its a great and powerful framework.
-But in my case, its better to say good bye.
+I enjoyed the time and learned a lot.
+If you use it often and don't target iOS, it's a great and powerful framework.
+But in my case, it's better to say good bye.
 
 ## Why Godot Engine?
 Godot is one of the most promising and growing Open Source Game Engine with a great community.
@@ -50,11 +50,11 @@ No need for special tools or knowledge of other software than Godot.
 ## What games will be ported?
 I will port for first [Sn4ke](@/games/sn4ke/index.md) to Godot.
 It is the game with most downloads and the game I spent most time to create it.
-Its also the only libGDX game I currently have on iOS.
+It's also the only libGDX game I currently have on iOS.
 
 After that I will port [WhatColor](@/games/whatcolor/index.md).
 There I will also extend and improve the game with sound, more levels, tutorials etc...
-I will then also be published on the App Store for iOS.
+It will then also be published for iOS.
 
 Last and least, my very first game [ColorShooter](@/games/color-shooter/index.md).
 I still don't know if I will port this game, but maybe some nostalgia will motivate me to do so.
