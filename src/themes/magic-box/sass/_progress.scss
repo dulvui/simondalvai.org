@@ -55,7 +55,7 @@
     }
 
     .progress .progress_text {
-        width: 85vw;
+        width: $mobile-width;
         line-height: 6vw;
     }
 }

@@ -32,11 +32,11 @@
 
     #navbar {
         padding-bottom: 0.5vw;
-        width: 60vw;
+        width: $desktop-width;
     }
 
     .nav {
-        font-size: 1.5vw;
+        // font-size: 1.5vw;
         font-weight: 300;
     }
 
@@ -56,7 +56,7 @@
     #navbar {
         padding-bottom: 1vw;
         top: 0;
-        width: 85vw;
+        width: $mobile-width;
     }
 
     .nav {

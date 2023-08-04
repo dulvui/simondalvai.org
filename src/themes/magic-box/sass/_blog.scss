@@ -4,9 +4,8 @@
     pre[class^="language-"],
     pre[class*=" language-"] {
         padding: 15px 10px 15px 10px;
-        max-width: 60vw;
+        max-width: $desktop-width;
         overflow: auto;
-        font-size: 1.2vw;
         margin-bottom: 5vh;
     }
 
@@ -27,12 +26,11 @@
         padding: 15px 10px 15px 10px;
         max-width: 80vw;
         overflow: auto;
-        font-size: 4vw;
         margin-bottom: 4vh;
     }
 
     .blog-image {
-        width: 85vw;
+        width: $mobile-width;
         height: auto;
         margin-top: 5vw;
         margin-bottom: 5vw;

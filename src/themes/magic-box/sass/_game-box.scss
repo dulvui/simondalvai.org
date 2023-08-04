@@ -39,11 +39,11 @@
     }
 
     .game-title {
-        font-size: 1.8vw;
+        // font-size: 1.8vw;
     }
 
     .game-description {
-        font-size: 1.2vw;
+        // font-size: 1.2vw;
         margin-top: 1vw;
         margin-bottom: 1vw;
     }
@@ -63,7 +63,7 @@
     .game-box {
         padding-top: 3vw;
         padding-bottom: 3vw;
-        width: 85vw;
+        width: $mobile-width;
         height: 28vw;
         margin-top: 2vw;
     }
@@ -79,13 +79,13 @@
     .game-title {
         display: flex;
         font-weight: 500;
-        font-size: 5vw;
+        // font-size: 5vw;
     }
 
     .game-description {
         margin-top: 1.5vw;
         margin-bottom: 2vw;
-        font-size: 4vw;
+        // font-size: 4vw;
     }
 
     .store-icons {
