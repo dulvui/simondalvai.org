@@ -6,7 +6,7 @@ date = 2023-03-26
 updated = 2023-03-26
 +++
 You can **support me** by making a donation 💝  
-Only a **few bucks** 💸 make already a big difference.
+A **little donation** makes already a big difference to me.
 
 ☕ Buy me a coffee with [PayPal](https://paypal.me/simondalvai) or [Card](https://donate.stripe.com/bIYeVldg9bMl5nG5kk)  
 👨‍💻 Support me on Github [Sponsors](https://github.com/sponsors/dulvui)    
