@@ -11,7 +11,7 @@ hackernews_link = "https://news.ycombinator.com/item?id="
 +++
 
 I really love Free and Open Source Software.
-Probably everybody with a working computing devices uses FOSS everyday, and most of them without knowing it.
+Probably everybody with a working computing device uses FOSS everyday, and most of them, without knowing it.
 I try to use it as much as I can, from the operating systems on my devices to the tools and apps I use.
 Since 5 years I also created FOSS games and tools.
 And here I'll write down my story, to hopefully inspire more people to follow me down the rabbit hole.
