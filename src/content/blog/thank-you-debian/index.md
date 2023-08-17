@@ -4,6 +4,9 @@ description = "How to build and publish an Open Source Godot Engine 3.x game to 
 date = 2023-08-17
 updated = 2023-08-17
 aliases = ["tyd"]
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/110905529635419134"
+hackernews_link = "https://news.ycombinator.com/item?id=37162664"
 +++
 
 Happy 30th Birthday Debian!    
