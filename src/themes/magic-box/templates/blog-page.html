@@ -25,4 +25,13 @@
   {% endif %}
 </p>
 
+<!-- Share -->
+
+{% if page.aliases %}
+<h2>Share</h2>
+<p>
+  Share this blog post with its tiny url {{ page.aliases | safe }}
+</p>
+{% endif %}
+
 {% endblock content %}
