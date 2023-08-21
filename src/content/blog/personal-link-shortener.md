@@ -4,7 +4,6 @@ description = "Make your links readable and easer to remember with your personal
 date = 2023-01-29
 updated = 2023-01-29
 draft = true
-aliases = ["pls"]
 +++
 
 Sharing links to your website can become quite long and difficult to type and share.

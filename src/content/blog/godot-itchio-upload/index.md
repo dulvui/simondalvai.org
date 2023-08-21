@@ -3,7 +3,6 @@ title = "Upload a Godot HTML5 game to itch.io with Github Actions"
 description = "Automatically upload your Android Godot game to itch.io with Github Actions godot-html-export and itchio-butler-upload"
 date = 2023-06-07
 updated = 2023-06-07
-aliases = ["gio"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110504878897747399"
 hackernews_link = "https://news.ycombinator.com/item?id=36466696"

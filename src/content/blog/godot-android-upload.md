@@ -3,7 +3,6 @@ title = "Automated Godot Android upload"
 description = "Automatically upload your Android Godot game to the Google Play Store with Github Actions"
 date = 2023-01-15
 updated = 2023-01-17
-aliases = ["gau"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391922548501588"
 hackernews_link = "https://news.ycombinator.com/item?id=36466436"

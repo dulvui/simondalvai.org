@@ -4,7 +4,6 @@ description = "My personal experience on how I use Godot Engine to create non-ga
 date = 2023-08-14
 updated = 2023-08-14
 draft = true
-aliases = ["gea"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/"
 hackernews_link = "https://news.ycombinator.com/item?id="

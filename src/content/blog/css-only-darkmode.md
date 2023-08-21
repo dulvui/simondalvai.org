@@ -3,7 +3,6 @@ title = "CSS only dark mode without JS"
 description = "Create dark mode with CSS only and no JS by using css media queries"
 date = 2023-03-19
 updated = 2023-03-20
-aliases = ["cod"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110486078968483198"
 hackernews_link = "https://news.ycombinator.com/item?id=36456513"

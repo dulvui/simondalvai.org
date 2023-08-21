@@ -4,7 +4,6 @@ description = "Use your KeePassXC file to so securely store your SSH keys"
 date = 2023-01-29
 updated = 2023-01-29
 draft = true
-aliases = ["kss"]
 +++
 
 [KeePassXC](https://keepassxc.org/) is a powerful password manager, that allows you to generate, save and organize your passwords in one file and sync it with all your devices, using your cloud storage service like [Nextcloud](https://nextcloud.com/) or other services of your choice.  
