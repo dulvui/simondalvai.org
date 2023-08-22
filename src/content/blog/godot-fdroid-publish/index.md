@@ -39,12 +39,12 @@ Categories:
   - Games
 License: AGPL-3.0-or-later
 AuthorName: Simon Dalvai
-AuthorEmail: info@simondalvai.com
-AuthorWebSite: https://simondalvai.com
-WebSite: https://simondalvai.com/games/ball2box/
+AuthorEmail: info@simondalvai.org
+AuthorWebSite: https://simondalvai.org
+WebSite: https://simondalvai.org/games/ball2box/
 SourceCode: https://github.com/dulvui/ball2box/
 IssueTracker: https://github.com/dulvui/ball2box/issues
-Donate: https://simondalvai.com/donate
+Donate: https://simondalvai.org/donate
 
 Name: Ball2Box
 AutoName: Ball2Box

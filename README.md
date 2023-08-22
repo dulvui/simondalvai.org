@@ -1,4 +1,4 @@
-# simondalvai.com
+# simondalvai.org
 My personal website.
 
 Created with [Zola](https://www.getzola.org/) and [magic-box theme](https://github.com/dulvui/magic-box)

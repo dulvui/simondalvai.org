@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://simondalvai.com"
+base_url = "https://simondalvai.org"
 title = "Simon Dalvai"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
@@ -44,7 +44,7 @@ links.paypal = "https://paypal.me/simondalvai"
 links.hetzner = "https://hetzner.cloud/?ref=bavTO3Qc2Kar"
 
 
-email = "info@simondalvai.com"
+email = "info@simondalvai.org"
 
 # privacy policy
 privacy_policy_updated = "2023-06-10"

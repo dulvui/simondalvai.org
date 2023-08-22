@@ -1,5 +1,5 @@
 +++
-title = "Privacy Policy - simondalvai.com"
+title = "Privacy Policy - simondalvai.org"
 template = "privacy-policy.html"
 [extra]
 name = "This website"
