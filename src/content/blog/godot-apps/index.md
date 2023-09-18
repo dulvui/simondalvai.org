@@ -4,8 +4,8 @@ description = "My personal experience on how I use Godot Engine to create non-ga
 date = 2023-09-18
 updated = 2023-09-18
 [extra]
-mastodon_link = "https://mastodon.social/@dulvui/"
-hackernews_link = "https://news.ycombinator.com/item?id="
+mastodon_link = "https://mastodon.social/@dulvui/111087833333535854"
+hackernews_link = "https://news.ycombinator.com/item?id=37560886"
 +++
 
 The main target of the Godot Engine are game developers.
