@@ -94,7 +94,6 @@ Here some code of my Futsal Manager game:
 
 ```gd
 # team.gd
-
 extends Resource
 class_name Team
 
