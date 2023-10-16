@@ -126,14 +126,14 @@ This makes the code type safe and gives you code autocompletion in the editor.
 Theres is no limit on how many Resources and Sub-resources you create.
 
 ## .tres vs .res
-Resources can be saved in two file formats **.tres** that are version-control-friendly and human readable.
+Resources can be saved in two file formats **.tres** that are version-control-friendly and human readable.  
 **.res** files instead are binary files and have better speed and compression.
 So depending on what data your store, you might prefer one or the other.
-It makes sense to save users data as .res files, for performance and to save disk space.
+It makes sense to save users data as .res files for performance and to save disk space.
 
 ## Further readings
 This was just my personal experience and knowledge about Godot's Custom Resources.
-They surely can do even more interesting stuff and there is a lot of other information on the web.
+They surely can do even more interesting stuff and there is a lot of other information about them on the web.
 
-Here you can read more about Resources in the official Godot [documentation](https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html) on how to use Resources and what features they bring.
+Here you can read the official Godot [documentation](https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html) on how to use Resources and what features they bring.  
 And here you can find the official [class reference](https://docs.godotengine.org/en/stable/classes/class_resource.html#class-resource).
