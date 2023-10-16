@@ -4,8 +4,8 @@ description = "Guide on why and how to use Custom Resources in Godot Engine 4.x 
 date = 2023-10-16
 updated = 2023-10-16
 [extra]
-mastodon_link = ""
-hackernews_link = ""
+mastodon_link = "https://mastodon.social/@dulvui/111246607715225767"
+hackernews_link = "https://news.ycombinator.com/item?id=37906183"
 +++
 
 ## Godot Resources in a nutshell
