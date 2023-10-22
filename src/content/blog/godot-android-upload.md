@@ -1,8 +1,8 @@
 +++
-title = "Automated Godot Android upload"
+title = "Automated Godot Android upload with Github Actions"
 description = "Automatically upload your Android Godot game to the Google Play Store with Github Actions"
 date = 2023-01-15
-updated = 2023-01-17
+updated = 2023-10-22
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391922548501588"
 hackernews_link = "https://news.ycombinator.com/item?id=36466436"
@@ -98,5 +98,5 @@ And now we can run the final step by uploading the exported game to the Google P
 
 The Android action is quite simpler than the iOS action and also easier to maintain because you don't have to care about yearly expiring Developer Certificates and Provisioning Profiles. Probably it is because I'm simply too unexperienced with iOS development and thus it is a pain every time I need to renew everything. But automating, at least the export and upload, is a big help, especially as a solo developer. It saves me a lot of time and brings much more joy when you can upload everything with a simple `git push`.
 
-You can find the complete action and instructions on [Github](https://github.com/dulvui/godot-android-export/blob/main/action.yml).  
+You can find the complete action and instructions on [Github](https://github.com/dulvui/godot-android-export).  
 If you have problems or need help with the action, simply open an issue in the repository.
