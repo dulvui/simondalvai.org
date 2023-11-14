@@ -3,7 +3,7 @@ title = 'Condor'
 description = "Swipe to hit the box"
 date = 2023-09-23
 [extra]
-released = false
+state = 'coming_soon'
 icon = 'img/game-icons/condor.webp'
 
 type = 'Godot'
