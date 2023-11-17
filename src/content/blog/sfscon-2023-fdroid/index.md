@@ -4,8 +4,8 @@ description = "F-Droid is an Free and Open Source app catalogue for Android. Fin
 date = 2023-11-17
 updated = 2023-11-17
 [extra]
-mastodon_link = ""
-hackernews_link = ""
+mastodon_link = "https://mastodon.social/@dulvui/111426853125366195"
+hackernews_link = "https://news.ycombinator.com/item?id=38305874"
 +++
 
 Also this year I had a talk at [SFSCON 2023](https://www.sfscon.it/) about F-Droid.  
