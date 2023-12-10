@@ -39,14 +39,14 @@ openssl x509 -inform der -in distribution.cer -out distribution.pem
 openssl x509 -in AppleWWDRCAG4.cer -inform DER -out AppleWWDRCAG4.pem -outform PEM
 ```
 
-5. Convert your cert plus Apple's cert to p12 format (choose a password for the .p12):
-Note: use -legacy if using opensssl v3.x https://stackoverflow.com/questions/70431528/mac-verification-failed-during-pkcs12-import-wrong-password-azure-devops
+5. Convert your cert plus Apple's cert to p12 format (choose a password for the .p12).  
+Note: use -legacy if using opensssl v3.x . Found on [StackOverflow](https://stackoverflow.com/questions/70431528/mac-verification-failed-during-pkcs12-import-wrong-password-azure-devops)
 ```sh
 openssl pkcs12 -export -legacy -out distribution.p12 -inkey distribution.key -in distribution.pem -certfile AppleWWDRCAG4.pem 
 ```
 
 6. Finally, update any Provisioning Profile with the new cert, and download them from dev portal.
-Now you can also sign any Provisioning Profiles with the new certificate and use them to release apps. 
+   Now you can also sign any Provisioning Profiles with the new certificate and use them to release apps. 
 
 ## Use in CI/CD like Github Actions
 The Developer Certificate and Provisioning Profile can be imported in any CI/CD system, like Github Actions.
