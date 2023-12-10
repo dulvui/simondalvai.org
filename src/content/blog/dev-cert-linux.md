@@ -3,6 +3,9 @@ title = "Create Apple Developer Certificate on Linux"
 description = "Guide on how to create Apple Developer Certificate on Linux without a Mac"
 date = 2023-12-10
 updated = 2023-12-10
+[extra]
+mastodon_link = "https://mastodon.social/@dulvui/111557144399329382"
+hackernews_link = "https://news.ycombinator.com/item?id=38592832"
 +++
 
 To upload a app to the App Store, you need to create a Developer Certificate.
