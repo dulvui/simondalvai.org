@@ -157,4 +157,4 @@ You can find the complete action on [Github](https://github.com/dulvui/godot-ios
 If you have problems or need help with the action, simply open an issue in the repository.
 
 
-Read [here](https://simondalvai.org/dev-cert-linux) on how to create a Apple Developer Certificate on Linux without a Mac.
+Read [here](https://simondalvai.org/blog/dev-cert-linux) on how to create a Apple Developer Certificate on Linux without a Mac.
