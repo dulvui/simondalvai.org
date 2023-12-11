@@ -10,6 +10,7 @@ permissions:
   id-token: write
   
 env:
+  ZOLA_VERSION: 0.17.2
   WORKING_DIRECTORY: src
 
 jobs:
@@ -20,23 +21,19 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
-      # - name: Get zola
-      #   run: |
-      #     wget -q -O - \
-      #     "https://github.com/getzola/zola/releases/download/v0.16.1/zola-v0.16.1-x86_64-unknown-linux-gnu.tar.gz" \
-      #     | tar xzf - -C /usr/local/bin
+      - name: Get zola
+        run: |
+          wget -q -O - \
+          "https://github.com/getzola/zola/releases/download/v${{ env.ZOLA_VERSION }}/zola-v${{ env.ZOLA_VERSION }}-x86_64-unknown-linux-gnu.tar.gz" \
+          | tar xzf - -C /usr/local/bin
 
-      # - name: Build
-      #   working-directory: ${{ env.WORKING_DIRECTORY }}
-      #   run: zola build
+      - name: Build
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+        run: zola build
 
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v2
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v1
-      #   with:
-      #     # Upload entire repository
-      #     path: 'docs'
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v1
+      - name: Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
