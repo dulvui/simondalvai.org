@@ -3,7 +3,7 @@ base_url = "https://simondalvai.org"
 title = "Simon Dalvai"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
-output_dir = "../docs"
+output_dir = "public"
 
 # When set to "true", the generated HTML files are minified.
 minify_html = true
