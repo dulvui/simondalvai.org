@@ -1,7 +1,8 @@
 +++
 title = 'Futsal Manager'
 description = "The worlds first Futsal Manager game."
-date = 2023-02-15
+date = 2023-02-15T13:48:00
+update = 2024-01-16T22:43:00
 [extra]
 released = 'coming_soon'
 icon = 'img/game-icons/futsal-manager.webp'
@@ -16,7 +17,7 @@ repo_codeberg = "https://codeberg.org/dulvui/futsal-manager"
 
 **Coming soon and still under development...**  
 
-I you whish to get **notified when the game comes out**, write me an email at [info@simondalvai.org](mailto:info@simondalvai.orgsubject=Futsal%20Manager%20release%20notification)
+I you whish be **added** to the alpha test lists (when they come out) or simply get **notified** when the game releases, write me an email at [info@simondalvai.org](mailto:info@simondalvai.orgsubject=Futsal%20Manager%20release%20notification)
 
 First pre-alpha versions available on Github!  
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.
