@@ -21,3 +21,12 @@ I you whish to get **notified** when the game releases, write me an email at [in
 
 First **pre-alpha versions** available on Github!  
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.
+
+## Direct links
+Find here the direct links to the latest alpha release  
+
+[**Windows**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager-Windows.zip)  
+[**Linux**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager-Linux.x86_64)  
+[**Android**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager.apk)  
+
+iOS and MacOS are still work in progress...  
