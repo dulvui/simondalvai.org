@@ -72,11 +72,11 @@ jobs:
 ```
 
 When the upload is finished, after a few seconds, you can already play the game in your browser. 
-Here you can see the uploaded games in the Channel history.
+Here you can see the uploaded games in the Channel history.  
 <img class="blog-image" src="html_channel.png" alt="html channel history">  
 
 
-And here the final result: Ball2Box playable in you browser on itch.io
+And here the final result: Ball2Box playable in you browser on itch.io  
 <img class="blog-image" src="ball2box.png" alt="Ball2Box on itch.io">  
 
 
