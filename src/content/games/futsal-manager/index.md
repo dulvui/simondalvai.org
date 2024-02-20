@@ -17,10 +17,19 @@ repo_codeberg = "https://codeberg.org/dulvui/futsal-manager"
 
 **Coming soon and still under development...**  
 
-I you whish to get **notified** when the game releases, write me an email at [info@simondalvai.org](mailto:info@simondalvai.orgsubject=Futsal%20Manager%20release%20notification)
+I you whish to get **notified** when the game releases, write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager%20release%20notification)
 
 First **pre-alpha versions** available on Github!  
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.
+
+## Add real teams to game
+Would you like to see your favorite Futsal team in the game?     
+Contact me at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager%20Teams) and I can add it to the game.
+
+Spread the word, so that many real teams will be available in the game!  
+This teams already joined the game:
+ - [United Galati](https://unitedgalati.ro), Romania 
+
 
 ## Direct links
 Find here the direct links to the latest alpha release  
