@@ -28,7 +28,7 @@ Contact me at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%
 
 Spread the word, so that many real teams will be available in the game!  
 This teams already joined the game:
- - [United Galati](https://unitedgalati.ro), Romania 
+ - [**United Galati**](https://unitedgalati.ro), Romania 
 
 
 ## Direct links
