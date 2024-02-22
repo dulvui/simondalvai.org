@@ -1,9 +1,8 @@
 +++
 title = "Open sourcing your games as solo game developer - a game changer"
 description = "Why making your games Open Source can help you as a solo independent game developer"
-date = 2024-02-21T23:00:00
-updated = 2024-02-21T23:00:00
-draft = false
+date = 2024-02-22T21:22:00
+updated = 2024-02-22T21:22:00
 [extra]
 mastodon_link = ""
 hackernews_link = ""
