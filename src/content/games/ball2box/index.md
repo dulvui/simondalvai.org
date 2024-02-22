@@ -10,6 +10,7 @@ playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.ultim
 appstore_link = 'https://apps.apple.com/us/app/ball2box/id1522604143'
 github_link = 'https://github.com/dulvui/ball2box/releases/'
 itchio_link= 'https://simondalvai.itch.io/ball2box'
+flathub_link= 'https://flathub.org/apps/org.simondalvai.ball2box'
 
 type = 'Godot'
 repo_github = "https://github.com/dulvui/ball2box"
