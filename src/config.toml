@@ -19,6 +19,9 @@ feed_filename = "rss.xml"
 
 theme = "magic-box"
 
+# Default author
+author = "Simon Dalvai"
+
 [markdown]
 external_links_target_blank = true
 highlight_code = true
