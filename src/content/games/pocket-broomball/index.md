@@ -2,6 +2,7 @@
 title = 'Pocket Broomball'
 description = "#1 Broomball game"
 date = 2021-09-29
+updated = 2024-03-24T16:40:00
 [extra]
 state = 'released'
 icon = 'img/game-icons/pocketbroomball.webp'
@@ -10,6 +11,7 @@ playstore_link = 'https://play.google.com/store/apps/details?id=com.salvai.broom
 appstore_link = 'https://apps.apple.com/app/pocket-broomball/id1511009171'
 itchio_link= 'https://simondalvai.itch.io/pocket-broomball'
 github_link = 'https://github.com/dulvui/pocket-broomball/releases/'
+flathub_link= 'https://flathub.org/apps/org.simondalvai.pocket-broomball'
 type = 'Godot'
 
 repo_github = "https://github.com/dulvui/pocket-broomball"
