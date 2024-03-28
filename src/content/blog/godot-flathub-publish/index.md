@@ -1,8 +1,8 @@
 +++
 title = "How to publish Godot games on Flathub, in a nutshell"
 description = "How to build and publish an Godot Engine 3.5 game on Flathub, in a nutshell"
-date = 2024-03-26T21:25:00
-updated = 2024-03-26T21:25:00
+date = 2024-03-26T21:25:00+00:00
+updated = 2024-03-26T21:25:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112164102888378393"
 hackernews_link = "https://news.ycombinator.com/item?id=39833065"

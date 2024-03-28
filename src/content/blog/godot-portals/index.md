@@ -1,8 +1,8 @@
 +++
 title = "Create portals in Godot with _integrate_forces"
 description = "Guide on how to create teleport portals, using Godot Engines _integrate_forces() function."
-date = 2024-01-14T17:48:00
-updated = 2024-01-14T17:48:00
+date = 2024-01-14T17:48:00+00:00
+updated = 2024-01-14T17:48:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111761480193133845"
 hackernews_link = "https://news.ycombinator.com/item?id=39004528"

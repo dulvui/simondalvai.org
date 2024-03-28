@@ -1,8 +1,8 @@
 +++
 title = 'Pocket Broomball'
 description = "#1 Broomball game"
-date = 2021-09-29
-updated = 2024-03-24T16:40:00
+date = 2021-09-29T00:00:00+00:00
+updated = 2024-03-24T16:40:00+00:00
 [extra]
 state = 'released'
 icon = 'img/game-icons/pocketbroomball.webp'

@@ -1,8 +1,8 @@
 +++
 title = 'Futsal Manager'
 description = "The worlds first Futsal Manager game."
-date = 2023-02-15T13:48:00
-update = 2024-02-20T23:14:00
+date = 2023-02-15T13:48:00+00:00
+update = 2024-02-20T23:14:00+00:00
 [extra]
 released = 'coming_soon'
 icon = 'img/game-icons/futsal-manager.webp'
