@@ -15,7 +15,7 @@ Both use Godot Engine 3.5 base image, so this post will focus on version 3.5, bu
 ## Flathub submission
 You should always read the official submission docs of Flathub, to know the latest and correct [steps](https://docs.flathub.org/docs/for-app-authors/submission/).
 
-In a nutshell, the process the following  
+In a nutshell, the process is the following  
 1) Fork Flathub repo
 2) Create files
    1) manifest
@@ -25,7 +25,7 @@ In a nutshell, the process the following
 3) Open pull request
 
 ## Manifest file
-The main file of a Flatpak app is the manifest file, containing all **informations needed to build the app**.  
+The main file of a Flatpak app is the manifest file, containing all **information needed to build the app**.  
 
 ```yml
 app-id: org.simondalvai.ball2box
@@ -147,7 +147,7 @@ Here the links to the appdata files
 [**Pocket Broomball**](https://github.com/dulvui/pocket-broomball/blob/main/flatpak/org.simondalvai.pocket-broomball.appdata.xml) 
 
 ## Desktop file
-The desktop file finally defines the how the app will appear in the OS, once installed.
+The desktop file finally defines how the app will appear in the OS, once installed.
 Also this file should be **upstream** and placed in the repository of your app, if possible.
 
 ```bash
@@ -167,15 +167,15 @@ Here the links to the desktop files
 [**Pocket Broomball**](https://github.com/dulvui/pocket-broomball/blob/main/flatpak/org.simondalvai.pocket-broomball.desktop)
 
 ### 256x256 px icon
-Finally you'll need an icon for the app, that should also be upstream.
+Finally, you'll need an icon for the app, that should also be upstream.
 It took me some time until I had the correct size of the icons with **the right padding**.
-So make sure that the icon follows the [quality guidelines](https://docs.flathub.org/docs/for-app-authors/metainfo-guidelines/quality-guidelines/#icon-size).
+So, make sure that the icon follows the [quality guidelines](https://docs.flathub.org/docs/for-app-authors/metainfo-guidelines/quality-guidelines/#icon-size).
 
 Here the links to the icons  
 [**Ball2Box**](https://github.com/flathub/org.simondalvai.ball2box/blob/master/icon-256.png)  
 [**Pocket Broomball**](https://github.com/dulvui/pocket-broomball/blob/main/flatpak/icon-256.png)  
 
-Note: The Ball2Box icon is placed in the flathub repo, since for I was not told in my PR to move it upstream.
+Note: The Ball2Box icon is placed in the Flathub repo, since I was not told in my PR to move it upstream.
 But it is still recommended to have it upstream, like it is in Pocket Broomball. 
 
 ## After submission
