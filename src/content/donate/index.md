@@ -2,8 +2,8 @@
 title = "Donate"
 description = "Support my work with your donation"
 template = "donate.html"
-date = 2023-03-26T22:48:00+00:00
-updated = 2024-01-11T22:48:00+00:00
+date = 2023-03-26T22:48:00
+updated = 2024-04-10T14:28:00
 +++
 You can **support me** by making a donation 💝  
 A **little donation** makes already a big difference to me.
@@ -26,19 +26,20 @@ A **little donation** makes already a big difference to me.
 | Apple Developer Fee 2020 |      99€ |
 | Apple Developer Fee 2022 |      99€ |
 | Apple Developer Fee 2023 |      99€ |
-| **Total**                | **322€** |
+| Apple Developer Fee 2024 |      99€ |
+| **Total**                | **421€** |
 
 ## Recurring donations
 Currently I get **0.09€** per week (~5€ per year).  
-<div class="progress" style="--percentage: 5%;"> 
+<div class="progress" style="--percentage: calc(5 / 99 * 100%);"> 
     <div class="progress_text">95€ to cover yearly costs</div>
     <div class="progress_bar"></div>
 </div>
 
 ## One time donations
 In total I got **16,50€** in one time donations.
-<div class="progress" style="--percentage: 5%;"> 
-    <div class="progress_text">305,50€ to break even</div>
+<div class="progress" style="--percentage: calc(16.5 / 421 * 100%);"> 
+    <div class="progress_text">404,50€ to break even</div>
     <div class="progress_bar"></div>
 </div>
 
