@@ -32,10 +32,10 @@ These teams already joined the game:
 
 
 ## Direct links
-Find here the direct links to the latest alpha release  
+Find here the direct links to the latest alpha release 0.2.2-22  
 
-[**Windows**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager-Windows.zip)  
-[**Linux**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager-Linux.x86_64)  
-[**Android**](https://github.com/dulvui/futsal-manager/releases/download/0.1.1-17/FutsalManager.apk)  
+[**Windows**](https://github.com/dulvui/futsal-manager/releases/download/0.2.2-22/FutsalManager-Windows.zip)  
+[**Linux**](https://github.com/dulvui/futsal-manager/releases/download/0.2.2-22/FutsalManager-Linux.x86_64)  
+[**Android**](https://github.com/dulvui/futsal-manager/releases/download/0.2.2-22/FutsalManager.apk)  
 
 iOS and MacOS are still work in progress...  
