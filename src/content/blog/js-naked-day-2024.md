@@ -4,8 +4,8 @@ description = "Celebrating the JS Naked Day 2024 on my website"
 date = 2024-04-23T20:20:00
 updated = 2024-04-23T20:20:00
 [extra]
-mastodon_link = ""
-hackernews_link = ""
+mastodon_link = "https://mastodon.social/@dulvui/112322392927772028"
+hackernews_link = "https://news.ycombinator.com/item?id=40136793"
 +++
 
 After I missed this year's [CSS Naked Day](https://css-naked-day.github.io/) on 9th of April, I'm happy to participate to the [JS Naked Day](https://js-naked-day.org/) on 24th of April.  
