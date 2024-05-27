@@ -14,7 +14,7 @@ zola build
 # Deploy
 This deployment is specific for my infrastructure, but it works with any caddy server or other http server.
 ```
-rsync -vra public/ floresta-root:/root/docker/web/simondalvai.org/site/
+rsync -vra public/ floresta-root:/root/docker/web/simondalvai.org/site/ --delete
 ```
 
 # Licenses
