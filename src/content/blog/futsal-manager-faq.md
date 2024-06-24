@@ -40,7 +40,7 @@ I do my very best to finish the game as soon as possible.
 ## Where can the game be played?
 This will be my first Desktop game released on Steam.
 So it will be available for **Linux** and **Windows**.
-If have no experience with building Godot games for MacOS, but once the main platforms are supported, I will take a look into that.
+I have no experience with building Godot games for MacOS, but once the main platforms are supported, I will take a look into that.
 
 For now no (official) mobile release is planned, since it is quite difficult to fit the content on small screens with touch support.
 There is already an apk file available to Download for Android on Github and this will continue to be available.
