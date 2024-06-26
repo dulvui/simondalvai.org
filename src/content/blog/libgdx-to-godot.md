@@ -1,8 +1,8 @@
 +++
 title = "Porting my libGDX games to Godot"
 description = "Porting my libGDX games to Godot for better maintainability and development"
-date = 2023-07-20
-updated = 2023-07-20
+date = 2023-07-20T00:00:00+00:00
+updated = 2023-07-20T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110747423147539606"
 hackernews_link = "https://news.ycombinator.com/item?id=36803161"

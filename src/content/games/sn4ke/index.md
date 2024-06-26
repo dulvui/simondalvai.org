@@ -1,7 +1,7 @@
 +++
 title = 'Sn4ke'
 description = "60 pixel levels"
-date = 2020-09-29
+date = 2020-09-29T00:00:00+00:00
 [extra]
 state = 'released'
 icon = 'img/game-icons/sn4ke.webp'

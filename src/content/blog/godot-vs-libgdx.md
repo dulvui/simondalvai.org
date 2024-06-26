@@ -1,8 +1,8 @@
 +++
 title = "Godot Engine vs libGDX"
 description = "My personal experience with libGDX and Godot"
-date = 2023-02-26
-updated = 2023-02-26
+date = 2023-02-26T00:00:00+00:00
+updated = 2023-02-26T00:00:00+00:00
 draft = false
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110486059574305335"

@@ -1,7 +1,7 @@
 +++
 title = 'WhatColor'
 description = "Remember the colors"
-date = 2019-10-29
+date = 2019-10-29T00:00:00+00:00
 [extra]
 state = 'released'
 icon = 'img/game-icons/whatcolor.webp'

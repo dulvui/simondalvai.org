@@ -1,8 +1,8 @@
 +++
 title = "Futsal Manager FAQ"
 description = "The most frequent questions about my Futsal Manager game"
-date = 2024-06-23T19:20:00
-updated = 2024-06-23T19:20:00
+date = 2024-06-23T19:20:00+00:00
+updated = 2024-06-23T19:20:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
 hackernews_link = ""

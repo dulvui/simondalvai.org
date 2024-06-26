@@ -1,8 +1,8 @@
 +++
 title = "Create non-game apps with Godot Engine"
 description = "My personal experience on how I use Godot Engine to create non-game applications"
-date = 2023-09-18
-updated = 2023-09-18
+date = 2023-09-18T00:00:00+00:00
+updated = 2023-09-18T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111087833333535854"
 hackernews_link = "https://news.ycombinator.com/item?id=37560886"

@@ -1,8 +1,8 @@
 +++
 title = "Personalized link shortener with Porkbun"
 description = "Make your links readable and easer to remember with your personal link shortener"
-date = 2023-01-29
-updated = 2023-01-29
+date = 2023-01-29T00:00:00+00:00
+updated = 2023-01-29T00:00:00+00:00
 draft = true
 +++
 

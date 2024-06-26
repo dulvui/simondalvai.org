@@ -1,8 +1,8 @@
 +++
 title = "Godot - Automated screenshots"
 description = "Automatically take screenshots of you Godot game for all possible devices with a tiny script"
-date = 2023-01-22
-updated = 2023-01-22
+date = 2023-01-22T00:00:00+00:00
+updated = 2023-01-22T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391932466547214"
 hackernews_link = "https://news.ycombinator.com/item?id=36466438"

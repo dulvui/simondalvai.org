@@ -1,8 +1,8 @@
 +++
 title = "Happy JS Naked Day 2024"
 description = "Celebrating the JS Naked Day 2024 on my website"
-date = 2024-04-23T20:20:00
-updated = 2024-04-23T20:20:00
+date = 2024-04-23T20:20:00+00:00
+updated = 2024-04-23T20:20:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112322392927772028"
 hackernews_link = "https://news.ycombinator.com/item?id=40136793"

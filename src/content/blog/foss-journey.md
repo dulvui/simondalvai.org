@@ -1,8 +1,8 @@
 +++
 title = "My personal Free and Open Source Software journey"
 description = "My personal experience on how I discovered Free and Open Source Software and why I use and create it."
-date = 2023-07-15
-updated = 2023-07-15
+date = 2023-07-15T00:00:00+00:00
+updated = 2023-07-15T00:00:00+00:00
 draft = true
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/"

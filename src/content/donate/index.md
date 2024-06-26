@@ -2,8 +2,8 @@
 title = "Donate"
 description = "Support my work with your donation"
 template = "donate.html"
-date = 2023-03-26T22:48:00
-updated = 2024-04-10T14:28:00
+date = 2023-03-26T22:48:00+00:00
+updated = 2024-04-10T14:28:00+00:00
 +++
 You can **support me** by making a donation 💝  
 A **little donation** makes already a big difference to me.

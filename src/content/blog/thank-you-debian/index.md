@@ -1,8 +1,8 @@
 +++
 title = "Thank you Debian and happy Birthday!"
 description = "How to build and publish an Open Source Godot Engine 3.x game to F-Droid"
-date = 2023-08-17
-updated = 2023-08-17
+date = 2023-08-17T00:00:00+00:00
+updated = 2023-08-17T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110905529635419134"
 hackernews_link = "https://news.ycombinator.com/item?id=37162664"

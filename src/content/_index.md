@@ -2,8 +2,6 @@
 title = "Simon Dalvai"
 description = "Simon Dalvai's personal website"
 template = "index.html"
-date = 2023-03-26
-updated = 2023-03-26
 insert_anchor_links = "heading"
 [extra]
 image = "img/me.webp"

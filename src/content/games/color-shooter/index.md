@@ -1,7 +1,7 @@
 +++
 title = 'Color Shooter'
 description = 'Shoot the colors'
-date = 2019-09-29
+date = 2019-09-29T00:00:00+00:00
 [extra]
 state = 'archived'
 

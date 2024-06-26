@@ -1,8 +1,8 @@
 +++
 title = "How to not install LineageOS 20 on Pixel 5 in 2023"
 description = "How to install LineageOS 20 on Pixel 5 in 2023 with Debian. What is needed and how to recover from eventual mistakes."
-date = 2023-07-08
-updated = 2023-07-08
+date = 2023-07-08T00:00:00+00:00
+updated = 2023-07-08T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110677519803530168"
 hackernews_link = "https://news.ycombinator.com/item?id=36642508"

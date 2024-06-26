@@ -1,8 +1,8 @@
 +++
 title = "Automated Godot 3.x iOS upload with Github Actions"
 description = "Automatically upload your iOS Godot 3.x game to the Apple App Store with Github Actions"
-date = 2022-12-29
-updated = 2023-10-22
+date = 2022-12-29T00:00:00+00:00
+updated = 2023-10-22T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391913791345026"
 hackernews_link = "https://news.ycombinator.com/item?id=36466433"
