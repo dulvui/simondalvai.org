@@ -7,13 +7,31 @@ $link-color-dark: #53f5c480;
 $font-color-light: $background-color-dark;
 $font-color-dark: $background-color-light;
 
-$desktop-width: 42vw;
-$mobile-width: 85vw;
+:root {
+  --desktop-width: 42rem;
+  --mobile-width: 24rem;
+}
 
-$desktop-font-size: 1.2vw;
-$mobile-font-size: 4.5vw;
 
+// Desktop
+@media only screen and (min-width: 1024px) {
+  :root {
+    --width: var(--desktop-width);
+    --font-size: var(--desktop-font-size);
+  }
+  p {
+    line-height: 1.4;
+  }
 
+}
+
+// Mobile
+@media only screen and (max-width: 1024px) {
+  :root {
+    --width: var(--mobile-width);
+    --font-size: var(--mobile-font-size);
+  }
+}
 
 // for all
 @import 'base';

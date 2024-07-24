@@ -1,48 +1,45 @@
 pre[class^="language-"],
 pre[class*=" language-"] {
-    padding: 15px 10px 15px 10px;
-    overflow: auto;
-    font-size: 0.8em;
+  padding: 15px 10px 15px 10px;
+  overflow: auto;
+  font-size: 0.8em;
 }
 
 .blog-image {
-    height: auto;
+  height: auto;
 }
 
 
 
-// Desktop
-@media only screen and (min-width: 1024px) {
 
-    .blog-image {
-        width: 20vw;
-        margin-top: 0.5vw;
-        margin-bottom: 0.5vw;
-    }
-
-    .blog-image-wide {
-        width: $desktop-width;
-    }
-
+.blog-image {
+  width: 20rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-// Mobile
-@media only screen and (max-width: 1024px) {
-
-    pre[class^="language-"],
-    pre[class*=" language-"] {
-        padding: 15px 10px 15px 10px;
-        max-width: 80vw;
-    }
-
-    .blog-image-wide {
-        width: $mobile-width;
-    }
-
-    .blog-image {
-        width: $mobile-width;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-    }
-
+.blog-image-wide {
+  width: var(--width);
 }
+
+
+// // Mobile
+// @media only screen and (max-width: 1024px) {
+//
+//   pre[class^="language-"],
+//   pre[class*=" language-"] {
+//     padding: 15px 10px 15px 10px;
+//     max-width: 80rem;
+//   }
+//
+//   .blog-image-wide {
+//     width: $mobile-width;
+//   }
+//
+//   .blog-image {
+//     width: $mobile-width;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//   }
+//
+// }

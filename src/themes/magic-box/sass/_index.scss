@@ -1,68 +1,40 @@
 .top-row {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #hello {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #introduction {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .selfie {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 
-// Desktop
-@media only screen and (min-width: 1024px) {
-
-    .top-row {
-        margin-top: 2vw;
-    }
-
-    #hello {
-        font-size: 4em;
-        margin-top: 1.5vw;
-        margin-bottom: 10px;
-        margin-left: 0px;
-    }
-
-    #introduction {
-        font-size: 2em;
-        margin-top: 10px;
-    }
-
-
-    .selfie {
-        width: 8vw;
-        height: 8vw;
-        margin-left: 5vw;
-    }
+.top-row {
+  margin-top: 2rem;
 }
 
-// Mobile
-@media only screen and (max-width: 1024px) {
+#hello {
+  font-size: 4em;
+  margin-top: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
 
-    .top-row {
-        margin-top: 6vw;
-    }
+#introduction {
+  font-size: 2em;
+  margin-top: 10px;
+}
 
-    #hello {
-        font-size: 3em;
-    }
 
-    #introduction {
-        font-size: 1.5em;
-        font-weight: 500;
-        margin-top: 15px;
-    }
-
-    .selfie {
-        width: 20vw;
-        height: 20vw;
-        margin-left: 14vw;
-    }
+.selfie {
+  width: 8rem;
+  height: 8rem;
+  margin-left: 5rem;
 }

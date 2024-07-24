@@ -1,55 +1,29 @@
 #screenshots {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    display: flex;
-    overflow: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  overflow: auto;
 }
 
 
 .game-page-icon {
-    float: right;
+  float: right;
 }
 
-// Desktop
-@media only screen and (min-width: 1024px) {
-
-    .screenshot {
-        margin-right: 1vw;
-        width: 14vw;
-    }
-
-    .store-icon-big {
-        cursor: pointer;
-        margin-right: 0.2vw;
-        height: 2.4vw;
-    }
-
-    .game-page-icon {
-        width: 10vw;
-        height: 10vw;
-        margin-left: 1.5vw;
-        border-radius: 1vw;
-    }
+.screenshot {
+  margin-right: 1rem;
+  width: 14rem;
 }
 
+.store-icon-big {
+  cursor: pointer;
+  margin-right: 0.2rem;
+  height: 2.4rem;
+}
 
-// Mobile
-@media only screen and (max-width: 1024px) {
-    .screenshot {
-        margin-right: 3vw;
-        width: 70vw;
-    }
-
-    .store-icon-big {
-        cursor: pointer;
-        margin-right: 2vw;
-        height: 12vw;
-    }
-
-    .game-page-icon {
-        width: 31vw;
-        height: 31vw;
-        border-radius: 4vw;
-        margin-left: 4vw;
-    }
+.game-page-icon {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
 }
