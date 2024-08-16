@@ -2,7 +2,7 @@
 title = 'Futsal Manager'
 description = "The world's first Futsal Manager game."
 date = 2023-02-15T13:48:00+00:00
-update = 2024-02-20T23:14:00+00:00
+update = 2024-08-16T21:25:00+00:00
 [extra]
 released = 'coming_soon'
 icon = 'img/game-icons/futsal-manager.webp'
@@ -14,22 +14,8 @@ type = 'Godot'
 repo_github = "https://github.com/dulvui/futsal-manager"
 repo_codeberg = "https://codeberg.org/dulvui/futsal-manager"
 +++
-
-**Coming soon and still under development...**  
-
-If you wish to get **notified** when the game releases, write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager%20release%20notification)
-
 First **pre-alpha versions** available on Github!  
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.
-
-## Add real teams to game
-Would you like to see your favorite Futsal team in the game?     
-Contact me at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager%20Teams) and I can add it to the game.
-
-Spread the word, so that many real teams will be available in the game!  
-These teams already joined the game:
- - [**United Galati**](https://unitedgalati.ro), Romania 
-
 
 ## Direct links
 Find here the direct links to the latest alpha release 0.2.2-22  
@@ -39,3 +25,12 @@ Find here the direct links to the latest alpha release 0.2.2-22
 [**Android**](https://github.com/dulvui/futsal-manager/releases/download/0.2.2-22/FutsalManager.apk)  
 
 iOS and MacOS are still work in progress...  
+
+## Stay up to date
+Write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager) or join my server on [Discord](https://discord.gg/a5DSHZKkA8), if you have questions about the game or simply want to stay up to date.  
+Please keep in mind that I barely use Discord and prefer e-mails, but since so many people use Discord, I'll give it a shot.
+So I might be slower to respond on Discord.
+
+## FAQ
+You can find my latest FAQ blog post about Futsal Manager [here](https://simondalvai.org/blog/futsal-manager-faq/).  
+If you have more questions or suggestions, feel free to contact me.
