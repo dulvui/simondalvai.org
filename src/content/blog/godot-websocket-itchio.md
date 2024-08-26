@@ -4,8 +4,8 @@ description = "A short guide on how to use websockets with Godot in web applicat
 date = 2024-08-26T16:10:00+00:00
 updated = 2024-08-26T16:10:00+00:00
 [extra]
-mastodon_link = "https://news.ycombinator.com/item?id=41358665"
-hackernews_link = "https://mastodon.social/@dulvui/113029203339573111"
+hackernews_link= "https://news.ycombinator.com/item?id=41358665"
+mastodon_link  = "https://mastodon.social/@dulvui/113029203339573111"
 +++
 
 To use websockets within your Godot game on itch.io, or any other website, a **secure** websocket connection, aka `wss://`, is mandatory.
