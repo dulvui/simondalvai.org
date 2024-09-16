@@ -4,8 +4,8 @@ description = "I quit my job to work full time as indie game developer."
 date = 2024-09-16T09:25:00+00:00
 updated = 2024-09-16T09:25:00+00:00
 [extra]
-hackernews_link= ""
-mastodon_link  = ""
+hackernews_link= "https://news.ycombinator.com/item?id=41554262"
+mastodon_link  = "https://mastodon.social/@dulvui/113146499648804120"
 +++
 
 I'm excited to announce that today is my first official day as a full time **indie game developer**. 
