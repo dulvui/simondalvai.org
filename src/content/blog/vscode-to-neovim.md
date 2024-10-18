@@ -4,8 +4,8 @@ description = "Why I switched from VSCode, then to VSCodium and finally to Neovi
 date = 2024-10-18T21:58:00+00:00
 updated = 2024-10-18T21:58:00+00:00
 [extra]
-mastodon_link = ""
-hackernews_link = ""
+mastodon_link = "https://mastodon.social/@dulvui/113330672031232401"
+hackernews_link = "https://news.ycombinator.com/item?id=41883883"
 +++
 
 I was using [VSCode](https://code.visualstudio.com/) and later [VSCodium](https://vscodium.com/) for some years as my editor for everything.
