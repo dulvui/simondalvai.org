@@ -37,19 +37,29 @@ Currently I get **0.09€** per week (~5€ per year).
 </div>
 
 ## One time donations
-In total I got **26,50€** in one time donations.
-<div class="progress" style="--percentage: calc(26.5 / 421 * 100%);"> 
-    <div class="progress_text">394,50€ to break even</div>
+In total I got **27,50€** in one time donations.
+<div class="progress" style="--percentage: calc(27.5 / 421 * 100%);"> 
+    <div class="progress_text">393,50€ to break even</div>
     <div class="progress_bar"></div>
 </div>
 
-## Donation messages
+## Donations
 💌 While donating you can leave me your name with a message that will be visible here.
+
+**Anonymous** donated 1€ on 21.10.2024  
 
 **Baffo** donated 10€ on 04.09.2024  
 *"Great games, keep it up!"*  
 
+**Anonymous** is donating 5€ per year since 10.01.2024  
+
 **Paul** donated 4€ on 31.05.2023  
 *"I just finished Ball2Box and I enjoyed it. Thanks for creating fun games that are free of ads and trackers. I will try the rest of the games :)"*  
 
-# THANK YOU!
+**Anonymous** donated 7.50€ on 16.05.2023  
+
+**Anonymous** donated 2€ on 05.04.2023  
+
+**Anonymous** donated 3€ on 12.02.2023  
+
+# THANK YOU ALL!
