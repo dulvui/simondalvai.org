@@ -2,7 +2,7 @@
 title = "Create Apple Developer Certificate on Linux"
 description = "Guide on how to create Apple Developer Certificate on Linux without a Mac"
 date = 2023-12-10T00:00:00+00:00
-updated = 2023-12-10T00:00:00+00:00
+updated = 2024-10-24T09:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111557144399329382"
 hackernews_link = "https://news.ycombinator.com/item?id=38592832"
@@ -33,9 +33,10 @@ Choose Production -> App Store and Ad Hoc
 openssl x509 -inform der -in distribution.cer -out distribution.pem
 ```
 
-4. Download Apple's Worldwide developer cert from portal and convert it to pem:  
-   https://www.apple.com/certificateauthority/ - Worldwide Developer Relations - G4 (Expiring 12/10/2030 00:00:00 UTC
+4. Download Apple's Worldwide developer cert from [Apple's certificates website](https://www.apple.com/certificateauthority/) and convert it to pem:  
+   Note: Here Worldwide Developer Relations - G4 (expiring 12/10/2030) is used.
 ```sh
+wget https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer
 openssl x509 -in AppleWWDRCAG4.cer -inform DER -out AppleWWDRCAG4.pem -outform PEM
 ```
 
