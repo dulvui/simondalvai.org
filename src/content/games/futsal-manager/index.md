@@ -1,11 +1,11 @@
 +++
-title = 'Futsal Manager'
-description = "The world's first Futsal Manager game."
+title = '99Managers: Futsal Edition'
+description = "99Managers is a series of sport manager games. This is the world's first Futsal Manager game."
 date = 2023-02-15T13:48:00+00:00
-update = 2024-08-16T21:25:00+00:00
+update = 2024-10-28T12:30:00+00:00
 [extra]
 released = 'coming_soon'
-icon = 'img/game-icons/futsal-manager.webp'
+icon = 'img/game-icons/99managers-futsal.webp'
 playstore_link = ''
 appstore_link = ''
 github_link = 'https://github.com/dulvui/futsal-manager/releases/'
@@ -27,10 +27,10 @@ Find here the direct links to the latest alpha release 0.2.2-22
 iOS and MacOS are still work in progress...  
 
 ## Stay up to date
-Write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=Futsal%20Manager) or join my server on [Discord](https://discord.gg/a5DSHZKkA8), if you have questions about the game or simply want to stay up to date.  
+Write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=99Managers:%20Futsal%20Edition) or join my server on [Discord](https://discord.gg/a5DSHZKkA8), if you have questions about the game or simply want to stay up to date.  
 Please keep in mind that I barely use Discord and prefer e-mails, but since so many people use Discord, I'll give it a shot.
 So I might be slower to respond on Discord.
 
 ## FAQ
-You can find my latest FAQ blog post about Futsal Manager [here](https://simondalvai.org/blog/futsal-manager-faq/).  
+You can find my latest FAQ blog post about the game [here](https://simondalvai.org/blog/futsal-manager-faq/).  
 If you have more questions or suggestions, feel free to contact me.
