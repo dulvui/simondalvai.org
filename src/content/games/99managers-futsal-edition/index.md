@@ -3,7 +3,7 @@ title = '99Managers: Futsal Edition'
 description = "99Managers is a series of sport manager games. This is the world's first Futsal Manager game."
 date = 2023-02-15T13:48:00+00:00
 update = 2024-11-03T20:30:00+00:00
-aliases = ["futsal-manager"]
+aliases = ["games/futsal-manager"]
 [extra]
 released = 'coming_soon'
 icon = 'img/game-icons/99managers-futsal.webp'
