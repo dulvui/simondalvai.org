@@ -1,8 +1,9 @@
 +++
-title = "Futsal Manager FAQ"
-description = "The most frequent questions about my Futsal Manager game"
+title = "99Managers: Futsal Edition FAQ"
+description = "The most frequent questions about 99Managers: Futsal Edition"
 date = 2024-06-23T19:20:00+00:00
-updated = 2024-06-23T19:20:00+00:00
+updated = 2024-11-03T20:20:00+00:00
+aliases = ["futsal-manager-faq"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
 hackernews_link = ""
