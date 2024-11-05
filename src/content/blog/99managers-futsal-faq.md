@@ -1,15 +1,15 @@
 +++
-title = "99Managers: Futsal Edition FAQ"
-description = "The most frequent questions about 99Managers: Futsal Edition"
+title = "99 Managers™ Futsal Edition FAQ"
+description = "The most frequent questions about 99 Managers™ Futsal Edition"
 date = 2024-06-23T19:20:00+00:00
-updated = 2024-11-03T20:20:00+00:00
+updated = 2024-11-05T13:35:00+00:00
 aliases = ["blog/futsal-manager-faq"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
 hackernews_link = ""
 +++
 
-About 10 people wrote me already an e-mail, asking mainly about when the game will be released and which teams the game will include.
+About 10 people wrote me already an e-mail, asking mainly about when [99 Managers™ Futsal Edition](@/games/99managers-futsal-edition) will be released and which teams the game will include.
 It is amazing to see people care about my game, even before the game is actually available.
 This motivates me a lot and pushes me really to finish this game!
 
