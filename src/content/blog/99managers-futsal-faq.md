@@ -9,7 +9,7 @@ mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
 hackernews_link = ""
 +++
 
-About 10 people wrote me already an e-mail, asking mainly about when [99 Managers™ Futsal Edition](@/games/99managers-futsal-edition) will be released and which teams the game will include.
+About 10 people wrote me already an e-mail, asking mainly about when [99 Managers™ Futsal Edition](@/games/99managers-futsal-edition/index.md) will be released and which teams the game will include.
 It is amazing to see people care about my game, even before the game is actually available.
 This motivates me a lot and pushes me really to finish this game!
 
