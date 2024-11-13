@@ -1,6 +1,6 @@
 +++
 title = '99 Managers™ Futsal Edition'
-description = "99 Managers™ Futsal Edition, is a futsal manager game made with Godot Engine 4."
+description = "99 Managers™ Futsal Edition, is a futsal manager game"
 date = 2023-02-15T13:48:00+00:00
 update = 2024-11-07T21:55:00+00:00
 aliases = ["games/futsal-manager"]
@@ -21,9 +21,10 @@ First **pre-alpha versions** available on [Github](https://github.com/dulvui/99m
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.
 
 ## Stay up to date
-Write me an email at [info@simondalvai.org](mailto:info@simondalvai.org?subject=99Managers:%20Futsal%20Edition) or join my server on [Discord](https://discord.gg/a5DSHZKkA8), if you have questions about the game or simply want to stay up to date.  
-Please keep in mind that I barely use Discord and prefer e-mails, but since so many people use Discord, I'll give it a shot.
-So I might be slower to respond on Discord.
+If you want to stay up to date, have questions or feedback  
+join my [**Matrix**](https://discord.gg/a5DSHZKkA8) Server  
+join my [**Discord**](https://discord.gg/a5DSHZKkA8) Server  
+or simply email me at [**info@simondalvai.org**](mailto:info@simondalvai.org?subject=99Managers:%20Futsal%20Edition)
 
 ## FAQ
 You can find my latest FAQ blog post about the game [here](https://simondalvai.org/blog/99managers-futsal-faq/).  
