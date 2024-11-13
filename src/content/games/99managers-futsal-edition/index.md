@@ -1,6 +1,6 @@
 +++
 title = '99 Managers™ Futsal Edition'
-description = "99 Managers™ Futsal Edition, is a futsal manager game"
+description = "A Futsal Manager game for Desktop PC"
 date = 2023-02-15T13:48:00+00:00
 update = 2024-11-07T21:55:00+00:00
 aliases = ["games/futsal-manager"]
