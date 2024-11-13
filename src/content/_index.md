@@ -7,12 +7,6 @@ insert_anchor_links = "heading"
 image = "img/me.webp"
 subtitle = "Hello."
 introduction = "I'm Simon Dalvai."
-github = "https://github.com/dulvui"
-githubsponsors = "https://github.com/sponsors/dulvui"
-linkedin = "https://www.linkedin.com/in/simon-dalvai/"
-liberapay = "https://liberapay.com/dulvui"
-mastodon = "https://mastodon.social/@dulvui"
-reddit = "https://www.reddit.com/user/dulvui"
 
 privacypolicy = "privacy-policies.md"
 +++
