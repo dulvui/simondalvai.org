@@ -1,11 +1,11 @@
 +++
 title = "Debian Sway v1 - My first setup"
 description = "This is ther version 1 of my Sway on Debain 12 setup with a list of useful tools."
-date = 2024-11-16T10:00:00+00:00
-updated = 2024-11-16T10:00:00+00:00
+date = 2024-11-16T10:15:00+00:00
+updated = 2024-11-16T10:15:00+00:00
 [extra]
-mastodon_link = ""
-hackernews_link = ""
+mastodon_link = "https://mastodon.social/@dulvui/113492114310252401"
+hackernews_link = "https://news.ycombinator.com/item?id=42155631"
 preview_image = "/blog/debian-sway-v1/debian-sway.webp"
 +++
 
