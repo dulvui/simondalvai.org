@@ -3,7 +3,6 @@ title = "Debian Sway v1 - My first setup"
 description = "This is ther version 1 of my Sway on Debain 12 setup with a list of useful tools."
 date = 2024-11-16T10:00:00+00:00
 updated = 2024-11-16T10:00:00+00:00
-draft = true
 [extra]
 mastodon_link = ""
 hackernews_link = ""
@@ -16,9 +15,9 @@ As all tiling window managers, you can start, arrange and align windows directly
 
 <img class="blog-image blog-image-wide" src="debian-sway.webp" alt="A screenshot of my Debain Sway setup with a Debian logo on a blue background with a moon in the center.">  
 
-I didn't find much on the web about how to setup and use Sway on Debian, therefore I will share my experience here.
-Getting Sway running on Debian needs **time and patience**.
-There is no official or unofficial Debian ISO image with Sway, and that means you need to setup everything from scratch.  
+I didn't find much on the web about how to setup Sway on Debian, therefore I will share my experience here.
+Getting it running on Debian needs **time and patience**.
+There is no official or unofficial Debian ISO image and that means you need to setup everything from scratch.  
 
 If you simply want to try Sway, without having to setup everything on your own, I would suggest [Fedora Sway](https://fedoraproject.org/spins/sway/).
 It has a lot of tools already installed out of the box and is a great place to get a first impression.
@@ -29,7 +28,7 @@ Keep in mind that this is no tutorial with exact and precise needed steps, but m
 ## XFCE, KDE and workspaces
 As you might saw in my previous [blog post](@/blog/vscode-to-neovim.md), this year I also started using Neovim.
 At that time, I was still using KDE Plasma 5 and I loved it.
-I used a 3x3 workspace grid, I brought over from XFCE, and had specific programs always in the same workspace.
+I used a 3x3 workspace grid, I brought over from XFCE and had specific programs always in the same workspace.
 
 But being able to do everything with a few keystrokes, like in Neovim, just feels so nice.
 Then I finally tried Sway, **side by side** to KDE Plasma and used both for some time.  
@@ -55,7 +54,7 @@ Does Bluetooth work?
 What did just happen?! Ohh, the battery is empty.  
 This and other stories will happen, the **first time** you'll use such a bare bones setup.
 In my previous try, all this things where covered by KDE, but Sway doesn't come with batteries included.
-The Debian setup without desktop environment is **designed for servers**, and they don't have displays, batteries or Bluetooth.
+The Debian setup without desktop environment is **designed for servers** and they don't have displays, batteries or Bluetooth.
 
 This can be seen as bad, but in some way also as good, right?
 You'll learn a lot of new tools and see **under the hood** of a conventional desktop environment.
@@ -73,7 +72,7 @@ With that, you no longer have to remember what checkbox you clicked in the setti
 If you reinstall your OS or change distro, you can simply **bring your config** files with you.
 
 You can even **synchronize** everything automatically with other machines.
-For example, you change your Sway key binds at home, and the next day at work, get the changes instantly synced to your working machine.
+For example, you change your Sway key binds at home and the next day at work, get the changes instantly synced to your working machine.
 I currently use a git and [Syncthing](https://syncthing.net/) combination to backup and synchronize my most precious files.
 Even on my Android phone with Neovim on Termux, I was able to reuse my Neovim configuration
 (this was just an experiment, I'm not that crazy, yet...).
@@ -163,7 +162,7 @@ You achieve that, by creating a new udev rule under **/etc/udev/rules.d/99-lowba
 # Suspend the system on 5% or lower
 SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[0-5]", RUN+="/usr/bin/systemctl suspend"
 ```
-Now you are save, and your system will not self destroy itself unexpectedly.
+Now you are save and your system will not self destroy itself unexpectedly.
 
 ### Sway bar
 Sway comes with that tiny bar on the top or bottom, where you can see your workspaces, the time and any other info you need.  
@@ -237,7 +236,7 @@ systemctl reboot
 
 ### Power button instant shutdown
 Per default, your machine will power off instantly, when you press the power button.
-This can get annoying, when you **intend to wake up** your machine from suspension, and instead **turn it off**.  
+This can get annoying, when you **intend to wake up** your machine from suspension and instead **turn it off**.  
 
 Thanks to this [reddit post](https://www.reddit.com/r/swaywm/comments/180ly44/how_to_change_power_button_behavior/),
 I found the solution.
@@ -285,7 +284,7 @@ Note: I own Sony headphones and I need to mention this, since it seems that many
 For that reason, it could be that yours work out of the box or need another library to work.
 
 ### Start Sway on login
-Simply put the following lines to your **~/.profile** file, and Sway will launch automatically, once you logged in.
+Simply put the following lines to your **~/.profile** file and Sway will launch automatically, once you logged in.
 This will also set some Wayland flags for Firefox, Thunderbird and other applications.  
 ```bash
 # Sway autostart
@@ -301,7 +300,7 @@ Simple yet effective and once I got used to it, I didn't mind that it doesn't lo
 
 ### Screen sharing
 This was the main reason, I still kept KDE on my system, since it **didn't work** out of the box with Sway.
-But then I decided to bite the bullet and finally fixed, it thanks to this guide on [Reddit](https://www.reddit.com/r/swaywm/comments/l4e55v/guide_how_to_screenshare_from_chromiumfirefox/).
+But then I decided to bite the bullet and finally fixed it thanks to this guide on [Reddit](https://www.reddit.com/r/swaywm/comments/l4e55v/guide_how_to_screenshare_from_chromiumfirefox/)
 This was the final hurdle I had to pass, before switching fully to Sway.  
 To get it working, simply install the following programs.
 ```bash
@@ -322,7 +321,7 @@ I could imagine **replacing my bash scripts**, with something more mature and re
 This would make the setup reproducible for everyone and more portable, maybe even for other distros.
 If I switch to Ansible, I'll let you know for sure, in another blog post.  
 Then I will discover more cool tools, or even **switch to Arch**?
-Or simply upgrade to Debian 13 Trixie and save some years of life, and gray hair.
+Or simply upgrade to Debian 13 Trixie and save some years of life and gray hair.
 
 Last but not least, v3 will be my own Debian distribution with Sway, maybe **Swaybian**?
 Or I could become the maintainer of an official Debian Sway release.
