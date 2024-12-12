@@ -3,7 +3,7 @@ title = "Creating a trailer for Steam  with Godot Movie Maker"
 description = "How I created the Steam gameplay trailer for my upcoming game 99 Managers Futsal Edition with Godot Movie Maker"
 date = 2024-12-15T10:15:00+00:00
 updated = 2024-12-15T10:15:00+00:00
-draft = false
+draft = true
 [extra]
 mastodon_link = ""
 hackernews_link = ""
@@ -35,7 +35,7 @@ Or if you made a mistake and broke something, simply run **git restore** and you
 <img class="blog-image" src="magic-button.webp" alt="A screenshot of Godot's Movie Maker button">
 
 And here the **magic button**, on the most right, that transforms Godot into Hollywood.
-Just press it and everything you will see on the screen will be saved to the file.
+Just press it and when you run a scene or the game, everything visible on the screen will be saved to the file.
 The file needs to be defined in Project Settings under **Editor>Movie Writer>Movie File**.
 Or add the String **move_file** to the scene's **metadata** as I did in the screenshot below.
 
@@ -201,5 +201,6 @@ So for a video of 10 seconds like mine, the task takes about 20 seconds.
 But I can imagine that a proper laptop or desktop PC should be able to play and write the videos at normal speed.
 
 ## Final verdict
-I would recommend using the Godot Movie Maker to everyone that knows how to use Godot or at least is eager to learn it.
-
+The Godot Movie Maker is much better as expected and makes the video making really fun.
+I could imagine making videos also for non gaming stuff, where things like text or effects can be automated.  
+Now I just need to add the Godot Engine to all the FOSS video creation tools list on the web ;-)
