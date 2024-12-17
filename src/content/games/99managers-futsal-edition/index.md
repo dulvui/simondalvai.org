@@ -5,17 +5,22 @@ date = 2023-02-15T13:48:00+00:00
 update = 2024-11-07T21:55:00+00:00
 aliases = ["games/futsal-manager"]
 [extra]
-released = 'coming_soon'
+state = 'released'
 icon = 'img/game-icons/99managers-futsal.webp'
 playstore_link = ''
 appstore_link = ''
 github_link = 'https://github.com/dulvui/99managers-futsal-edition/releases/'
+steam_link = 'https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/'
+itchio_link= 'https://simondalvai.itch.io/99managers-futsal-edition'
 type = 'Godot'
 
 repo_github = "https://github.com/dulvui/99managers-futsal-edition"
 repo_codeberg = "https://codeberg.org/dulvui/99managers-futsal-edition"
 +++
+**[Wishlist now on Steam!](https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/)**
+
 99 Managers™ Futsal Edition, is a futsal manager game for Desktop, Android and iOS.
+
 
 First **pre-alpha versions** available on [Github](https://github.com/dulvui/99managers-futsal-edition/releases)!  
 Please don't expect much yet and play with caution, things will change drastically before first alpha release.

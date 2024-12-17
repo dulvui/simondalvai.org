@@ -5,23 +5,11 @@
   {{ section.title }}
 </h1>
 {{ section.content | safe }}
-<h2>Godot Engine</h2>
 
 {% set games = get_section(path="games/_index.md") %}
 {% for page in games.pages | filter(attribute="extra.state", value="released") %}
 <!-- filter out pages that are not projects, like 'About' -->
-{% if page.extra.type == 'Godot' %}
 {% include 'partials/game-box.html' %}
-{% endif %}
-{% endfor %}
-
-
-<h2>libGDX</h2>
-
-{% for page in games.pages | filter(attribute="extra.state", value="released") %}
-{% if page.extra.type == 'libGDX' %}
-{% include 'partials/game-box.html' %}
-{% endif %}
 {% endfor %}
 
 <!-- Coming soon -->
