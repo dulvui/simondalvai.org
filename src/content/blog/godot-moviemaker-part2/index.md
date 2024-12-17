@@ -1,6 +1,6 @@
 +++
-title = "Creating a trailer for Steam  with Godot Movie Maker"
-description = "How I created the Steam gameplay trailer for my upcoming game 99 Managers Futsal Edition with Godot Movie Maker"
+title = "Creating a simple trailer for my Steam game with Godot Movie Maker"
+description = "How I created a simple Steam trailer for my upcoming game 99 Managers Futsal Edition with Godot Movie Maker"
 date = 2024-12-15T10:15:00+00:00
 updated = 2024-12-15T10:15:00+00:00
 draft = true
@@ -12,7 +12,6 @@ preview_image = ""
 
 To release a game on Steam, a video of the game is needed.
 It doesn't really need to be a video about actual game play, but can only be a teaser, where you announce your game.  
-Note: As later turned out, at least **one video must contain gameplay** scenes.
 
 I don't have much experience with video creation and editing, so I started to **search the web** once again for Open Source video editing tools.
 The first I found where [OpenShot](https://www.openshot.org/) or [Kdenlive](https://kdenlive.org), which I already used and where quite happy with them.
@@ -36,7 +35,7 @@ Or if you made a mistake and broke something, simply run **git restore** and you
 
 And here the **magic button**, on the most right, that transforms Godot into Hollywood.
 Just press it and when you run a scene or the game, everything visible on the screen will be saved to the file.
-The file needs to be defined in Project Settings under **Editor>Movie Writer>Movie File**.
+The file needs to be defined under **Project Settings>Editor>Movie Writer>Movie File**.
 Or add the String **move_file** to the scene's **metadata** as I did in the screenshot below.
 
 <img class="blog-image blog-image-wide" src="metadata.webp" alt="A screenshot movie_file metadata place in the inspector">
@@ -192,6 +191,30 @@ func fade_out(node: Node) -> void:
 ```
 
 With this approach, I was also able to **easily show game play scenes** like the match or the dashboard.
+
+## Game interaction
+To show also some game interactions like changing team formation or searching for a player, I started to press the wanted buttons in the code.
+Tha worked fine, but looked a bit weird, since no mouse and no button clicks are visible.
+So it deosn't really represent the **real look and feel** of the game.
+
+I don't know why I didn't try this before, but you can actually interact with the game, while recording the video in Movie Maker mode.
+This IS AMAZING, since now I can intercat with the game, as a **real human** would do.  
+Now there is just one minor issue, the mouse cursor is not visible in the final video.
+I tried changing the cursor image in **Project Settings>Display>Mouse Cursor**, but it still wasn't visible.
+
+Thanks to Godot **being Open Source**, I could check their repositories and found this proposal on [Github](https://github.com/godotengine/godot-proposals/issues/5387)
+So as omnipresent Calinou (it seems he [doesn't even sleep](https://github.com/godotengine/godot-proposals/issues/4485) :-) )suggested,
+I added a mouse cursor sprite, that follows my mouse.
+```gdscript
+extends Control
+
+@onready var cursor_texture: TextureRect = $CursorTexture
+
+
+func _process(_delta: float) -> void:
+	cursor_texture.position = get_viewport().get_mouse_position()
+
+```
 
 ## Performance
 Video editing and gaming (in a world before LLMs) are the most resource intensive tasks you probably can do on a computer.
