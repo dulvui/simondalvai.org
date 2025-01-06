@@ -6,9 +6,9 @@ date = 2023-03-26T22:48:00+00:00
 updated = 2025-01-06T10:13:00+00:00
 +++
 
-I no longer accept donations, because I will fund my development trough the sales of my games on
+I no longer accept donations, because I will fund my development through the sales of my games on
 [Steam](https://store.steampowered.com/search/?developer=Simon%20Dalvai).  
-**Thanks again to all the nice people** who supported me trough donations!
+**Thanks again to all the nice people** who supported me with donations!
 
 ## You can still support my work!
 **Tell** your friends about my [games](/games)  
