@@ -1,51 +1,21 @@
 +++
 title = "Donate"
-description = "Support my work with your donation"
+description = "Support my work"
 template = "donate.html"
 date = 2023-03-26T22:48:00+00:00
-updated = 2024-10-21T21:47:00+00:00
+updated = 2025-01-06T10:13:00+00:00
 +++
-You can **support me** by making a donation 💝  
-A **little donation** makes already a big difference to me.
 
-☕ Buy me a coffee with [PayPal](https://paypal.me/simondalvai) or [Card](https://donate.stripe.com/bIYeVldg9bMl5nG5kk)  
-👨‍💻 Support me on Github [Sponsors](https://github.com/sponsors/dulvui)    
-🪙 Put your spare change on [Liberapay](https://liberapay.com/dulvui)  
+I no longer accept donations, because I will fund my development trough the sales of my games on
+[Steam](https://store.steampowered.com/search/?developer=Simon%20Dalvai).  
+**Thanks again to all the nice people** who supported me trough donations!
 
-## No cash? No problem!
-⭐ Rate and review my [games](/games)  
-🕹️ Tell your friends about my [games](/games)   
-🌟 Star my repos on [Github](https://github.com/dulvui) or [Codeberg](https://codeberg.org/dulvui)  
-📚 Share my blog [posts](/blog)  
-
-## Current costs
-
-| Cause                    |     Cost |
-| :----------------------- | -------: |
-| Google Play Store Fee    |      25€ |
-| Apple Developer Fee 2020 |      99€ |
-| Apple Developer Fee 2022 |      99€ |
-| Apple Developer Fee 2023 |      99€ |
-| Apple Developer Fee 2024 |      99€ |
-| **Total**                | **421€** |
-
-## Recurring donations
-Currently I get **0.09€** per week (~5€ per year).  
-<div class="progress" style="--percentage: calc(5 / 99 * 100%);"> 
-    <div class="progress_text">95€ to cover yearly costs</div>
-    <div class="progress_bar"></div>
-</div>
-
-## One time donations
-In total I got **27,50€** in one time donations.
-<div class="progress" style="--percentage: calc(27.5 / 421 * 100%);"> 
-    <div class="progress_text">393,50€ to break even</div>
-    <div class="progress_bar"></div>
-</div>
+## You can still support my work!
+**Tell** your friends about my [games](/games)  
+**Star** my repos on [Codeberg](https://codeberg.org/dulvui) or [Github](https://github.com/dulvui)  
+**Share** my [blog posts](/blog)  
 
 ## Donations
-💌 While donating you can leave me your name with a message that will be visible here.
-
 **Anonymous** donated 1€ on 21.10.2024  
 
 **Baffo** donated 10€ on 04.09.2024  
