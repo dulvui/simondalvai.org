@@ -21,28 +21,30 @@ So you can integrate it directly to you existing configuration or extend it late
 Please note that some minimal knowledge about **Linux and Neovim config files** is needed to, be able follow this blog post.
 
 Technically you can also **just use Godot with vanilla Neovim** with no further changes.
-But then you might miss some features like **opening files** when clicked in the file explorer or **lsp support**.  
+But then you might miss some features like **opening files** when clicked in the file explorer or **LSP support**.  
 So lets set this up to let Godot add some magic to Neovim.
 
 ## Neovim server mode
 Before we can set Neovim as external editor in Godot, we need to start Neovim in server mode. 
-For that, a **pipe file** is needed, where Godot can send commands to Neovim.  
+Additionally to that, a **pipe file** is needed, where Godot can send commands to Neovim.  
+
 But first lets first create the nvim cache directory, where the file will be located.
 ```bash
 mkdir -p ~/.cache/nvim
 ```
 
-Now we can create the server pipe file in our **init.lua** file.
-This will create the file and start Neovim in server mode, so it can handle calls from external tools, like Godot.
+Now we can add the following code to the **init.lua** file.
 ```lua
 local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
 if not vim.loop.fs_stat(pipepath) then
   vim.fn.serverstart(pipepath)
 end
 ```
+This will create the pipe file and start Neovim in server mode, on startup.
 
 ## Godot Editor Settings
-Now you can set Neovim as external editor in **Editor Settings > Text Editor > External**.  
+Now Neovim is ready to be set as external editor in **Editor Settings > Text Editor > External**.  
+
 There you need to set the following values, as in the screenshot below.
 
 <img class="blog-image-wide" src="godot-editor-settings.webp" alt="A screenshot of Godot's Editor Settings for external Text Editors">
@@ -55,14 +57,14 @@ Remember to replace **YOUR_USER** with your username.
 ```bash
 --server /home/YOUR_USER/.cache/nvim/server.pipe --remote-send "<C-\><C-N>:e {file}<CR>:call cursor({line}+1,{col})<CR>"
 ```
+This line will make Neovim open the **file** and move your cursor to the **line** and **column**.
 The **+1** in `cursor({line}+1)` is to go to the correct line.
 For some reason without +1, the line above is selected.
 
-Now you can use Neovim as external editor in Godot and **open files** from the file explorer.
-The next steps will extend it to add more features.
+Now you can use Neovim as external editor in Godot and **open files** with it.
 
 ## LSP support
-Godot has a built-in [**L**anguage **S**erver **P**rotocol](https://docs.godotengine.org/en/stable/tutorials/editor/external_editor.html#lsp-dap-support)
+Godot has a built-in [**L**anguage **S**erver **P**rotocol](https://docs.godotengine.org/en/stable/tutorials/editor/external_editor.html#lsp-dap-support),
 that gives you features like **code competition**, **error highlights** and **function definition lookups**.
 
 First we need to install the [Neovim lsp plugin](https://github.com/neovim/nvim-lspconfig) and set it up.
@@ -79,17 +81,18 @@ Now you can access all special features when opening GDScript files.
 You can try code competition with **Ctrl + x** and **Ctrl + o**.
 This will suggest also all class names, function names etc in your Godot project.
 
-I faced sometime some issues with the LSP, like not being able to look up functions or auto complete.
-In this case you can try restarting the LSP plugin with the command `:LspRestart`, or simply restart Neovim.
+There can be **issues** with the LSP, like not being able to look up functions or auto complete.
+In this case you can try **restarting** the LSP plugin with the command `:LspRestart`, or simply restart Neovim.
 
 Keep in mind that the LSP runs within Godot, so you need a running editor instance with your project open.
 
 ## Treesitter
-To get colored code highlighting, [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) does a perfect job.
+To get **better** colored code highlighting, [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) does a perfect job.
 This plugin does also a lot of other things, like building a tree structure of your code.
-Other plugins and Neovim might use that tree for better manipulation of your code.
-
+Other plugins might use that tree for better manipulation of your code.  
 But I (probably, I'm not sure) use it only for nicer colors.
+
+So lets add also this to the **init.lua** file.
 ```lua
 -- Installation
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
@@ -100,6 +103,7 @@ require'nvim-treesitter.configs'.setup {
     highlight = {
         enable = true,
     },
+    -- disable auto install of languages when opening files
     auto_install = false,
     -- disable for files bigger than 100 KB
     disable = function(lang, buf)
@@ -122,25 +126,26 @@ Neovim already can colorize some of the code, but Treesitter can do it better.
 ## Debugging
 Godot has a built-in [**D**ebug**A**dapter**P**rotocol](https://docs.godotengine.org/en/stable/tutorials/editor/external_editor.html#lsp-dap-support),
 so it is directly integrated with Godot, exactly as the LSP.
-There are many Neovim Debug plugins out there, if you are already familiar with one, it's worth to check out if it support Godot.
+There are many Neovim Debug plugins out there, if you are already familiar with one, it's worth to check out if it supports Godot.
 
 While writing this blog post, I used to have [nvim-dap](https://github.com/mfussenegger/nvim-dap) installed.
-This can attach to Godot's DAP and allows you to set breakpoints, run the game and debug it.
+This can attach to Godot's DAP and allow you things like set breakpoints or run the game from Neovim.
 Then I also tried [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui), that adds the needed UI with variable values etc. to Neovim.
-But I faced several crashes of Godot and a inconsistent workflow.
+But I faced **several crashes** of Godot and a inconsistent workflow.
+So I found, in my opinion, and **more stable** and **easier** way.
 
-To be honest, the Godot's debugger is hard to beat, with the remote tree inspector and all the rest.  
-Secondly another huge problem for my game: **launching specific scenes**.  
-I searched the web and haven't found a solution for this.
-Since I really often run specific scenes, since my latest game got quite big.
-Having to start from the main scene every time can get frustrating.  
-But, you can run specific scenes from the editor, right?
-Yes! But the problem is that then I can't set breakpoints.
-Somehow Godot get's the breakpoints I set with nvim-dap, only when I start it from there.
+To be honest, the Godot's debugger is hard to beat, with the remote tree inspector and all the rest.
+Secondly another huge problem for my game: **launching specific scenes**.
+I searched the web and haven't found a way to open a specific scene with nvim-dap.  
+I often run specific scenes, since my latest game got quite big.
+Having to start from the main scene every time, can get quite **frustrating**.  
+But you can run specific scenes from the editor, right?
+Yes! But somehow Godot get's the breakpoints set with nvim-dap, **only** when started with nvim-dap.
 
 So I had to ask myself: how the f*ck was I debugging the last months??  
-And well, the ansewer is easy, I was not using nvim-dap, but the **breakpoint keyword**.
-The following code will first print `Hello` and the break.
+And well, the ansewer is easy, I was not using nvim-dap, but the **breakpoint keyword**.  
+
+The following code will print `Hello` and then break and wait.
 ```gd
 func _ready() -> void:
 	print("Hello")
@@ -150,6 +155,7 @@ func _ready() -> void:
 This can have the **disadvantages** that you need to write it, and remember **to remove it**.
 No worries, it won't break your game when exported.
 This keyword only works when the project runs inside Godot editor.  
+
 But the **advantages** are that this breakpoints are in the code, so they are saved and can be **shared with others**.
 And I don't need a Neovim plugin and can use the real power of it, **editing code**.
 
