@@ -1,31 +1,29 @@
 +++
 title = "Neovim as External Editor for Godot"
-descriptior = "How to setup and use Neovim as external Editor in Godot, with a few plugins."
-date = 2025-01-17T22:00:00+00:00
-updated = 2025-01-17T22:00:00+00:00
-draft = false
+descriptior = "How to setup and use Neovim as external Editor in Godot, with a few Neovim plugins and customizations."
+date = 2025-01-19T09:53:00+00:00
+updated = 2025-01-19T09:53:00+00:00
 [extra]
-mastodon_link = ""
-hackernews_link = ""
-preview_image = "/blog/godot-neovim/godot-neovim.webp"
+mastodon_link = "https://mastodon.social/@dulvui/113854416500491083"
+hackernews_link = "https://news.ycombinator.com/item?id=42755603"
+preview_image = "/blog/godot-neovim/treesitter.webp"
 +++
 
-Since some months now I'm happily using Neovim as an **external editor** with Godot Engine 3 and 4.
-Godot's internal text editor is fine, but my desire to really learn Neovim was too big.  
-There actually exists even an [Vim plugin](https://github.com/joshnajera/godot-vim) for Godot, that brings basic motions to the built-in text editor.
-But I simply want to use the real thing.
+Since some months now, I'm happily using Neovim as an **external editor** with Godot Engine 3 and 4.
+Godot's internal text editor is fine, but my desire to use Neovim was too big.  
 
 This blog post covers a **minimal setup** to get Neovim working with Godot.
-So you can integrate it directly to you existing configuration or extend it later.
+So you can integrate it directly to your existing configuration or use it as a starting point.
 
-Please note that some minimal knowledge about **Linux and Neovim config files** is needed to, be able follow this blog post.
+Please note that some minimal knowledge about **Linux and Neovim config files** is needed to follow this blog post.
 
-Technically you can also **just use Godot with vanilla Neovim** with no further changes.
-But then you might miss some features like **opening files** when clicked in the file explorer or **LSP support**.  
+Technically you can also **just use Godot with vanilla Vim/Neovim** with no further changes.
+But you might miss some features like **opening files** when clicked in the file explorer or **LSP support**.  
+
 So lets set this up to let Godot add some magic to Neovim.
 
 ## Neovim server mode
-Before we can set Neovim as external editor in Godot, we need to start Neovim in server mode. 
+Before you can set Neovim as external editor in Godot, you need to start Neovim in server mode. 
 Additionally to that, a **pipe file** is needed, where Godot can send commands to Neovim.  
 
 But first lets first create the nvim cache directory, where the file will be located.
@@ -33,31 +31,36 @@ But first lets first create the nvim cache directory, where the file will be loc
 mkdir -p ~/.cache/nvim
 ```
 
-Now we can add the following code to the **init.lua** file.
+Now you can add the following code to the [**init.lua**](https://neovim.io/doc/user/lua-guide.html#lua-guide-config) file.
 ```lua
 local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
 if not vim.loop.fs_stat(pipepath) then
   vim.fn.serverstart(pipepath)
 end
 ```
-This will create the pipe file and start Neovim in server mode, on startup.
+This will create the pipe file and start Neovim in server mode on startup.
+
+There is room for improvements here, like to start server mode only, if a **project.godot** file is found.
+So there is no issue if you run multiple instances of Neovim.
+With the current setup, only the **first** instance opened, will receive the commands.  
+I will update this section, when I find a better solution or if you already have one, please let me know.
 
 ## Godot Editor Settings
 Now Neovim is ready to be set as external editor in **Editor Settings > Text Editor > External**.  
 
-There you need to set the following values, as in the screenshot below.
-
 <img class="blog-image-wide" src="godot-editor-settings.webp" alt="A screenshot of Godot's Editor Settings for external Text Editors">
 
+There you need to set the following values:  
 1) Enable **Use External Editor**.  
 2) Set **Exec Path** to the Neovim path.
 3) Set **Exec Flags** to the following line.
 
-Remember to replace **YOUR_USER** with your username.
 ```bash
 --server /home/YOUR_USER/.cache/nvim/server.pipe --remote-send "<C-\><C-N>:e {file}<CR>:call cursor({line}+1,{col})<CR>"
 ```
-This line will make Neovim open the **file** and move your cursor to the **line** and **column**.
+Remember to replace **YOUR_USER** with your username.
+
+This line will make Neovim open the **file** in a buffer and move your cursor to the indicated **line** and **column**.
 The **+1** in `cursor({line}+1)` is to go to the correct line.
 For some reason without +1, the line above is selected.
 
@@ -67,7 +70,7 @@ Now you can use Neovim as external editor in Godot and **open files** with it.
 Godot has a built-in [**L**anguage **S**erver **P**rotocol](https://docs.godotengine.org/en/stable/tutorials/editor/external_editor.html#lsp-dap-support),
 that gives you features like **code competition**, **error highlights** and **function definition lookups**.
 
-First we need to install the [Neovim lsp plugin](https://github.com/neovim/nvim-lspconfig) and set it up.
+First you need to install the [Neovim LSP plugin](https://github.com/neovim/nvim-lspconfig) and set it up.
 I will use [vim-plug](https://github.com/junegunn/vim-plug) as my plugin manager.
 ```lua
 -- Installation
@@ -79,10 +82,11 @@ lspconfig.gdscript.setup{}
 ```
 Now you can access all special features when opening GDScript files.  
 You can try code competition with **Ctrl + x** and **Ctrl + o**.
-This will suggest also all class names, function names etc in your Godot project.
+This will suggest also all class names, function names etc in your Godot project.  
+With **Ctrl + ]** you can jump to the definition of a function.
 
-There can be **issues** with the LSP, like not being able to look up functions or auto complete.
-In this case you can try **restarting** the LSP plugin with the command `:LspRestart`, or simply restart Neovim.
+There can be **issues** with the LSP, like auto complete giving no results.
+In this case you can try **restarting** the LSP plugin with the command **:LspRestart**, or simply restart Neovim.
 
 Keep in mind that the LSP runs within Godot, so you need a running editor instance with your project open.
 
@@ -90,9 +94,8 @@ Keep in mind that the LSP runs within Godot, so you need a running editor instan
 To get **better** colored code highlighting, [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) does a perfect job.
 This plugin does also a lot of other things, like building a tree structure of your code.
 Other plugins might use that tree for better manipulation of your code.  
-But I (probably, I'm not sure) use it only for nicer colors.
+But I use it only for nicer colors (probably, I'm not sure).
 
-So lets add also this to the **init.lua** file.
 ```lua
 -- Installation
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
@@ -115,6 +118,10 @@ require'nvim-treesitter.configs'.setup {
     end,
 }
 ```
+This setup of treesitter includes also some configuration.
+The plugins gets **disabled** for files bigger than 100KB, to keep opening Neovim fast.
+With **auto_install = false**, new languages don't get installed automatically, when opening a file of the respective language.
+Only the languages defined in **ensure_installed** are installed.
 
 Here you can see a side by side comparison of Treesitter **disabled on the left** and **enabled on the right**.
 
@@ -129,38 +136,39 @@ so it is directly integrated with Godot, exactly as the LSP.
 There are many Neovim Debug plugins out there, if you are already familiar with one, it's worth to check out if it supports Godot.
 
 While writing this blog post, I used to have [nvim-dap](https://github.com/mfussenegger/nvim-dap) installed.
-This can attach to Godot's DAP and allow you things like set breakpoints or run the game from Neovim.
+This can attach to Godot's DAP and allow you to set breakpoints or run the game from Neovim.
 Then I also tried [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui), that adds the needed UI with variable values etc. to Neovim.
-But I faced **several crashes** of Godot and a inconsistent workflow.
-So I found, in my opinion, and **more stable** and **easier** way.
+But with this setup, I faced **several crashes** of Godot and a inconsistent workflow.
+So I found, in my opinion, and **more stable** and **easier** way to debug.
 
-To be honest, the Godot's debugger is hard to beat, with the remote tree inspector and all the rest.
+To be honest, the Godot's debug UI is hard to beat, with the remote tree inspector and all the rest.
 Secondly another huge problem for my game: **launching specific scenes**.
 I searched the web and haven't found a way to open a specific scene with nvim-dap.  
-I often run specific scenes, since my latest game got quite big.
+
+I often run specific scenes, since my [latest game](@/games/99managers-futsal-edition/index.md) got quite big.
 Having to start from the main scene every time, can get quite **frustrating**.  
 But you can run specific scenes from the editor, right?
 Yes! But somehow Godot get's the breakpoints set with nvim-dap, **only** when started with nvim-dap.
 
 So I had to ask myself: how the f*ck was I debugging the last months??  
-And well, the ansewer is easy, I was not using nvim-dap, but the **breakpoint keyword**.  
+And well, the ansewer is easy, I actually was not using nvim-dap, but the **breakpoint keyword**.  
 
 The following code will print `Hello` and then break and wait.
 ```gd
 func _ready() -> void:
-	print("Hello")
+    print("Hello")
     breakpoint
-	print("world!")
+    print("world!")
 ```
 This can have the **disadvantages** that you need to write it, and remember **to remove it**.
 No worries, it won't break your game when exported.
-This keyword only works when the project runs inside Godot editor.  
+This keyword only works, when the project runs inside a Godot editor.  
 
-But the **advantages** are that this breakpoints are in the code, so they are saved and can be **shared with others**.
-And I don't need a Neovim plugin and can use the real power of it, **editing code**.
+But the **advantages** are, that this breakpoints are written code, so they are persistent and can be **shared** with other developers or machines.
+And there is no need for an additional Neovim plugin.
 
-The best part of all this, I wrote my first self made Neovim custom functions/commands (or however they are called).
-Seeing for the first time, why it is so cool and you can really make it you own.  
+The best part of all this, I wrote my first **custom** Neovim functions/commands (or however they are called).
+Seeing for the first time, why Neovim is so fun and truly hackable.  
 ```lua
 -- write breakpoint to new line
 vim.api.nvim_create_user_command('GodotBreakpoint', function()
@@ -182,26 +190,27 @@ end, {})
 vim.keymap.set('n', '<leader>BF', ':GodotFindBreakpoints<CR>')
 ```
 
-So I created the custom command **GodotBreakpoint**.
-It simply adds the String breakpoint below the line the cursor is on, indented correctly
-(that might be caused by other some plugin/config).  
-The second command is**GodotDeleteBreakpoints**, that deletes all breakpoints lines in the current buffer.  
-And the last command **GodotFindBreakpoints** finds all breakpoints in the 
+**GodotBreakpoint**  adds the "breakpoint" String below the line the cursor is on, indented correctly.  
+**GodotDeleteBreakpoints** deletes all breakpoints lines in the current buffer.  
+**GodotFindBreakpoints** finds all breakpoints in the current project.
+
+Now its possible to write, delete and search breakpoints within Neovim with simple keymaps.
 
 Finally you need to enable also **Debug with External Editor** under the Script view.
+If this flag is not set, the internal editor will open while debugging.
 
 <img class="blog-image-wide" src="debug-external-editor.webp" alt="Screenshot of the settings to be enabled for Debug with External Editor">
 
 ## Godot documentation
-You can read documentation for a function with **Shift + k**, while the Neovim cursor is on a function in normal mode.
+You can read documentation for a function with **Shift + k**, while the cursor is on a function.
 If you want to read or search **Godot's full offline** documentation, you can still do that in the Editor with the **Search Help** button.
-This will open the documentation in Godot's built-in text Editor.  
+This will open the documentation in Godot's built-in editor.  
 I don't know if it's even possible to open also this files in Neovim, but for me this is totally fine.
 
 ## Full Neovim configuration
 Here you can find the **full init.lua** file, ready to be hacked and extended.  
-You can find my full Neovim configuration in my dofiles repo on [Codeberg](https://codeberg.org/dulvui/dotfiles) and [Github](https://github.com/dulvui/dotfiles).
-This contains some more plugins, colorschemes and configurations.
+You can find my personal full Neovim configuration in my dofiles repo on [Codeberg](https://codeberg.org/dulvui/dotfiles) and [Github](https://github.com/dulvui/dotfiles).
+This contains some more plugins, color schemes and configurations.
 ```lua
 -- ----------------------
 -- vim-plug plugin-manager
@@ -235,7 +244,9 @@ require'nvim-treesitter.configs'.setup {
     highlight = {
         enable = true,
     },
+    -- disable auto install of languages when opening files
     auto_install = false,
+    -- disable for files bigger than 100 KB
     disable = function(lang, buf)
         local max_filesize = 100 * 1024 -- 100 KB
         local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
@@ -269,11 +280,12 @@ vim.keymap.set('n', '<leader>BF', ':GodotFindBreakpoints<CR>')
 ```
 
 ## What I miss in Neovim
-So far the biggest feature I miss, is the easy drag and drop of a Node into the text editor.
-This will automatically create the var with the correct Nodepath.
-But after some time I found a much better approach by using **%** and 
+So far the biggest feature I miss, is the easy **Ctrl + drag and drop** of a Node into the text editor.
+This will automatically create the var with the correct Nodepath.  
+
+After some time I found a much better approach by using **%** and 
 [**Access as Unique Name**](https://docs.godotengine.org/en/stable/tutorials/scripting/scene_unique_nodes.html#creation-and-usage).
-With this you can access the Node without having to write the full Node path.
+With this you can access the Node, without having to write the full Node path.
 ```gd
 # This long path
 @onready var healt_label: Label = $MarginContainer/HBoxContainer/VBoxContainer/HealthLabel
@@ -282,5 +294,5 @@ With this you can access the Node without having to write the full Node path.
 ```
 Another crucial advantage is that you can move the Node around the tree, or change parent Nodes, without having to adjust the path.
 
-At the end of the day, being able to use Neovim pays back anyways, if you like it and are keen to learn new stuff.  
+At the end of the day, being able to use Neovim pays back anyways, if you like it and are keen to keep learning.
 Or you already know everything about Vim/Neovim, but let's be honest, **nobody does**.
