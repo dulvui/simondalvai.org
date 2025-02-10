@@ -19,11 +19,7 @@ repo_codeberg = "https://codeberg.org/dulvui/99managers-futsal-edition"
 +++
 **[Wishlist now on Steam!](https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/)**
 
-99 Managers™ Futsal Edition, is a futsal manager game for Desktop, Android and iOS.
-
-
-First **pre-alpha versions** available on [Github](https://github.com/dulvui/99managers-futsal-edition/releases)!  
-Please don't expect much yet and play with caution, things will change drastically before first alpha release.
+99 Managers™ Futsal Edition, is a futsal manager game for Linux, Windows and MacOS.
 
 ## Stay up to date
 If you want to stay up to date, have questions or feedback  
@@ -34,12 +30,3 @@ or simply email me at [**info@simondalvai.org**](mailto:info@simondalvai.org?sub
 ## FAQ
 You can find my latest FAQ blog post about the game [here](https://simondalvai.org/blog/99managers-futsal-faq/).  
 If you have more questions or suggestions, feel free to contact me.
-
-## Direct links
-Find here the direct links to the latest alpha release 0.2.3-23  
-
-[**Windows**](https://github.com/dulvui/99managers-futsal-edition/releases/download/0.2.3-23/FutsalManager-Windows.zip)  
-[**Linux**](https://github.com/dulvui/99managers-futsal-edition/releases/download/0.2.3-23/FutsalManager-Linux.x86_64)  
-[**Android**](https://github.com/dulvui/99managers-futsal-edition/releases/download/0.2.3-23/FutsalManager.apk)  
-
-iOS and MacOS are still work in progress...  
