@@ -2,18 +2,15 @@
 title = "99 Managers™ Futsal Edition FAQ"
 description = "The most frequent questions about 99 Managers™ Futsal Edition"
 date = 2024-06-23T19:20:00+00:00
-updated = 2024-11-05T13:35:00+00:00
+updated = 2025-11-02T09:30:00+00:00
 aliases = ["blog/futsal-manager-faq"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
 hackernews_link = ""
 +++
 
-About 10 people wrote me already an e-mail, asking mainly about when [99 Managers™ Futsal Edition](@/games/99managers-futsal-edition/index.md) will be released and which teams the game will include.
-It is amazing to see people care about my game, even before the game is actually available.
-This motivates me a lot and pushes me really to finish this game!
-
-Here some answers to questions that came up.
+**[Wishlist now on Steam!](https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/)**  
+**[Play the beta on itch.io](https://simondalvai.itch.io/99managers-futsal-edition)**
 
 ## What teams/players will be in the game?
 There will be **no real teams and players** in the game.
@@ -29,26 +26,29 @@ Another even simpler solution could be to simply add a csv import/export functio
 This is on my to-do list, for the future.
 
 ## When will the game be available?
-To be honest, **I don't know**.
-I hope to release a first **playable demo** version on itch.io and then on Steam **by the end of the year 2024**.
+The game will be released 2025 and the exact date has still to be defined.
+There is a **beta version** available on [itch.io](https://simondalvai.itch.io/99managers-futsal-edition).
 
 I started working on the game on 11th July 2020 and a lot happened since then.
 I migrated it from Godot 3.5 to 4, rewrote the Match engine several times and there is still much to do.
-Currently I work only in my free time on this game, while having a full time job.
+I worked only in my free time on this game, while having a full time job.
+Since September 2024 I'm working full time on this game.
 
 I do my very best to finish the game as soon as possible.
 
 ## Where can the game be played?
 This will be my first Desktop game released on Steam.
-So it will be available for **Linux** and **Windows**.
-I have no experience with building Godot games for MacOS, but once the main platforms are supported, I will take a look into that.
+So it will be available for **Linux**, **Windows** and **MacOS**.
 
 For now no (official) mobile release is planned, since it is quite difficult to fit the content on small screens with touch support.
-There is already an apk file available to Download for Android on Github and this will continue to be available.
+But once the game is released on Desktop, a mobile release might follow.
 
 ## How much will the game cost?
 This might be my first game with a price, but I'm not sure how much.
-I guess it will be between 5€ and 15€, depending how the game will look and feel at first release.
+I guess it will be between 5€ and 10€ on Steam, depending how the game will look and feel at first release.
+
+The same game without modification will always be available for free on itch.io.
+Once the beta period is over, the game will also be available for free on other platforms like flathub.org.
 
 This game is Free and Open Source, under the [AGPL v3.0 or later](https://spdx.org/licenses/AGPL-3.0-or-later) license.
 That means that you are free to **study, modify, improve and share** the source code.
@@ -61,7 +61,8 @@ Until the game is still in an unstable development phase, like now, I prefer to 
 But as soon the game is in a stable state, you can contribute your ideas and especially **bug fixes**.
 
 If you can't code, you still can help by **translating the game** to other languages.
-There will be a dedicated page, probably on [weblate.org](https://weblate.org), where everybody can add and fix translations.
-As soon as the development is stable and translations are open, I'll post here and on [Mastodon](https://mastodon.social/@dulvui).
+There is a dedicated page on [weblate.org](https://hosted.weblate.org/projects/99-managers-futsal-edition/),
+where everybody can add new languages and improve existing translations.
 
 And of course, you can also help me a lot by **spreading the word** about the game.
+
