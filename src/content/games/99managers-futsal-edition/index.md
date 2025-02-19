@@ -1,8 +1,8 @@
 +++
-title = '99 Managers™ Futsal Edition'
+title = '99 Managers® Futsal Edition'
 description = "A Futsal Manager game for Desktop PC"
 date = 2023-02-15T13:48:00+00:00
-updated = 2025-11-02T09:30:00+00:00
+updated = 2025-02-19T15:32:00+00:00
 aliases = ["games/futsal-manager"]
 [extra]
 state = 'released'
@@ -20,7 +20,7 @@ repo_codeberg = "https://codeberg.org/dulvui/99managers-futsal-edition"
 **[Wishlist now on Steam!](https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/)**  
 **[Play the beta on itch.io](https://simondalvai.itch.io/99managers-futsal-edition)**
 
-99 Managers™ Futsal Edition, is a Open source Futsal Manager game for Linux, Windows and MacOS.
+99 Managers® Futsal Edition, is a Open source Futsal Manager game for Linux, Windows and MacOS.
 
 ## Stay up to date
 If you want to stay up to date, have questions or feedback  
