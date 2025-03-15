@@ -12,17 +12,15 @@ hackernews_link = "https://news.ycombinator.com/item?id="
 Resources in Godot are really powerful and can make a Game Devs life easier in many ways.
 If you haven't used them yet, I can only recommend reading the
 [official docs](https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html)
-or my [blog post](@/blog/godot-custom-resources.md) about them. 
+or my [blog post](@/blog/godot-custom-resources.md) about them.  
+Now I use them a lot, especially in bigger projects with many different data models.
+At some point, you might want to duplicate a resource using the duplicate() method.
+Here things got complicated for me.  
+Reading the documentation would have saved me hours of debugging, and writing this blog post.
+But I didn't expect that their duplicate() method works much different as in other object oriented programming languages.
+So I skipped that part and can proudly share this article.
 
-They are widely used in the editor itself, and even bring their own [security risks](https://github.com/godotengine/godot-proposals/issues/4925).
-I'm using them a lot in my recent game.
-For example all data objects are custom resources now.
-Before that, everything was a Dictionary, until I simply had too many different objects to be able to remember property names.
-Custom resources bring auto complete and certainty, that you access the correct properties.
-
-So far so good, until I started duplicating them.
-Reading the documentation would have saved me hours of debugging.
-But well, also reading documentation takes time, so choose your poison :-)
+Note: This blog post was written using **Godot 4.x** (version 4.4 to be precise) and things could break with further versions.
 
 ## Create custom resources
 Godot has already a lot of built-in resources.
@@ -37,7 +35,8 @@ extends Resource
 @export var name: String
 @export var surname: String
 
-# custom resources need a _init function with default values
+# custom resources need a _init() method with default values
+# to work as expected inside Godot
 func _init(
     p_name: String = "",
     p_surname: String = "",
@@ -83,22 +82,29 @@ extends Resource
 
 @export var name: String
 @export var goalkeeper: Player
+@export var field_players: Array[Player]
 
 func _init(
     p_name: String = "",
     p_goalkeeper: Player = Player.new(),
+    p_field_players: Array[Player] = [],
 ) -> void:
     name = p_name
     goalkeeper = p_goalkeeper
+    field_players = p_field_players
 
+```
+
+Now let's play with them.
+```gd
 # Let's instantiate a team with a goalkeeper
 var team_1: Team = Team.new("Italy", Player.new("Gianluigi", "Buffon"))
 # and a copy of it
-var team_2: Team = team.duplicate()
+var team_2: Team = team_1.duplicate()
 
 team_2.name = "Italy copy"
-# Fail, because both teams are unique and independent resources
-assert(team_1.name == team_2.name)
+# True, because both teams are unique and independent resources
+assert(team_1.name != team_2.name)
 
 # changing player_1's properties, will no longer change player_2's properties
 team_2.goalkeeper.name = "Ganluigi"
@@ -123,47 +129,32 @@ Additionally, this method will fail if **_init()** has been defined with **requi
 # Let's instantiate a team with a goalkeeper
 var team_1: Team = Team.new("Italy", Player.new("Gianluigi", "Buffon"))
 # and a copy of it, with subresources set to true
-var team_2: Team = team.duplicate(true)
+var team_2: Team = team_1.duplicate(true)
 
 team_2.name = "Italy copy"
-# False, because both teams are unique and independent resources
-assert(team_1.name == team_2.name)
+# Still true, because both teams are unique and independent resources
+assert(team_1.name != team_2.name)
 
-team_2.goalkeeper.name = "Ganluigi"
+team_2.goalkeeper.name = "Gianluigi"
 team_2.goalkeeper.surname = "Donnarumma"
 # True, because both still are named Gianluigi
 assert(team_1.goalkeeper.name == team_2.goalkeeper.name)
-# False, because the team_2's goalkeeper NO LONGER is a reference of the team_1's goalkeeper
-assert(team_1.goalkeeper.surname == team_2.goalkeeper.surname)
+# True, because the team_2's goalkeeper NO LONGER is a reference of the team_1's goalkeeper
+assert(team_1.goalkeeper.surname != team_2.goalkeeper.surname)
 ```
+
+## Real deep duplication
 Great, we can now duplicate resources now with all properties.
 Well, actually not all of them.  
 The documentation reads: "Subresources inside Array and Dictionary properties are **never** duplicated."
-
-## Real deep copy
-So there is currently no way to deeply duplicate a resource, with all it's sub-resources, using Godot's methods.
-```gd
-class_name Team
-extends Resource
-
-@export var name: String
-@export var field_players: Array[Player]
-
-func _init(
-    p_name: String = "",
-    p_players: Array[Player] = [],
-) -> void:
-    name = p_name
-    players = p_players
-
-```
-
+So there is currently no way to deeply duplicate a resource, with ALL it's sub-resources, using Godot's methods.
 ```gd
 # Lets create once again two players
-var player_1: Player = Player.new("Gianluigi", "Buffon")
+var goalkeeper: Player = Player.new("Gianluigi", "Buffon")
+var player_1: Player = Player.new("Paolo", "Maldini")
 var player_2: Player = Player.new("Alessandro", "Del Piero")
 # and a team with the two players
-var team_1: Team = Team.new("Italy", [player_1, player_2])
+var team_1: Team = Team.new("Italy", goalkeeper, [player_1, player_2])
 ```
 
 Now we have a resource (team) with an Array of sub-resources (players).
@@ -171,34 +162,34 @@ Let's make some tests.
 ```gd
 var team_2: Team = team_1.duplicate(true)
 team_2.name = "Italy copy"
-# lets change a players surname
-team_2.players[0].surname = "Donnarumma"
-# False
-assert(team_1.name == team_2.name)
-# True, because both player arrays still contain the same resources
-assert(team_1.players[0].surname == team_2.players[0].surname)
+# lets change a players name
+team_2.players[0].name = "Daniele"
+# True
+assert(team_1.surname != team_2.surname)
+# True, because both player arrays still are the same resource
+assert(team_1.players[0].name == team_2.players[0].name)
 ```
 
 So let's create a custom method to cover this special case.
 ```gd
-func duplicate_real_deep() -> Team:
+func duplicate_deep() -> Team:
 	var copy: Team = duplicate(true)
 	copy.players = []
-	for player: Player in players:
+	for player: Player in field_players:
 		copy.players.append(player.duplicate(true))
 	return copy
 ```
 Using this method, the tests from above will work as expected.
 The same approach works with Dictionaries.
 ```gd
-var team_2: Team = team_1.duplicate(true)
-team_2.name = "Italy copy"
+var team_deep: Team = team_1.duplicate_deep()
+team_deep.name = "Italy copy"
 # lets change a players surname
-team_2.players[0].surname = "Donnarumma"
-# False
-assert(team_1.name == team_2.name)
-# False, because both players are unique resources
-assert(team_1.players[0].surname == team_2.players[0].surname)
+team_deep.players[0].name = "Daniele"
+# True
+assert(team_1.surname != team_deep.surname)
+# True, because both players are unique resources
+assert(team_1.players[0].name != team_deep.players[0].name)
 ```
 Here you can find the
 [official documentation](https://docs.godotengine.org/en/stable/classes/class_resource.html#class-resource-method-duplicate)
@@ -214,3 +205,11 @@ Said that, I also highly recommend to read the official documentation, as much a
 Godot has a really great documentation, included offline in the editor.
 So even with no/low internet connections, you should be covered.
 And to be honest, if I should have read the duplicate methods documentation better in the first place.
+
+## Summary
+So in a nutshell the most important things to keep in mind when duplicating resources are:
+- Needs _init() with default parameters
+- Only @export annotated properties get duplicated
+- duplicate() creates copy of built-in properties, but references to sub-resources, except Arrays and Dictionaries
+- duplicate(true) creates copy of all properties also sub-resources, except Arrays and Dictionaries
+- A custom method is needed, to duplicate Arrays and Dictionaries
