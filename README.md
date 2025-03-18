@@ -4,6 +4,8 @@ My personal website visible at [simondalvai.org](https://simondalvai.org/) or it
 Created with [Zola](https://www.getzola.org/) and [magic-box theme](https://github.com/dulvui/magic-box).  
 Available on [Codeberg](https://codeberg.org/dulvui/simondalvai.org) and [Github](https://github.com/dulvui/simondalvai.org).
 
+# Sandbox
+
 # Build
 To build the site locally please install first [zola](https://www.getzola.org/).
 ```

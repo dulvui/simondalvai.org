@@ -1,11 +1,11 @@
 +++
 title = "Blog"
-description = "Blog about Godot and libGDX game development and more"
+description = "Monthly blog about game development with Godot and other technical topics."
 template = "blog.html"
 sort_by = "date"
 page_template = "blog-page.html"
 insert_anchor_links = "heading"
 +++
 
-I write about game development with **Godot Engine** and **libGDX**.  
-Sometimes also about other technical topics.
+I write monthly about game development, mostly with **Godot Engine**.  
+Sometimes also about other software related topics.
