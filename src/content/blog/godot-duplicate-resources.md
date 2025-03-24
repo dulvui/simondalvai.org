@@ -21,7 +21,7 @@ But I didn't expect that their duplicate() method works much different as in oth
 
 The full source code in this article can be found on
 [Coderberg](https://codeberg.org/dulvui/simondalvai.org/src/branch/main/sandbox/duplicate-resources/)
-and on [Github](https://github.com/dulvui/simondalvai.org/src/branch/main/sandbox/duplicate-resources/).
+and on [Github](https://github.com/dulvui/simondalvai.org/tree/main/sandbox/duplicate-resources).
 
 Note: This blog post was written using **Godot 4.x** (version 4.4 to be precise) and things could break with further versions.
 
