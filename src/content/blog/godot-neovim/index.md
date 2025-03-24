@@ -2,7 +2,7 @@
 title = "Neovim as External Editor for Godot"
 descriptior = "How to setup and use Neovim as external Editor in Godot, with a few Neovim plugins and customizations."
 date = 2025-01-19T09:53:00+00:00
-updated = 2025-01-19T09:53:00+00:00
+updated = 2025-03-24T09:05:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/113854416500491083"
 hackernews_link = "https://news.ycombinator.com/item?id=42755603"
@@ -23,27 +23,42 @@ But you might miss some features like **opening files** when clicked in the file
 So lets set this up to let Godot add some magic to Neovim.
 
 ## Neovim server mode
-Before you can set Neovim as external editor in Godot, you need to start Neovim in server mode. 
+Before you can set Neovim as external editor in Godot, you need to start Neovim in server mode.
 Additionally to that, a **pipe file** is needed, where Godot can send commands to Neovim.  
-
-But first lets first create the nvim cache directory, where the file will be located.
-```bash
-mkdir -p ~/.cache/nvim
-```
-
-Now you can add the following code to the [**init.lua**](https://neovim.io/doc/user/lua-guide.html#lua-guide-config) file.
+Add the following code to the [**init.lua**](https://neovim.io/doc/user/lua-guide.html#lua-guide-config) file.
 ```lua
-local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
-if not vim.loop.fs_stat(pipepath) then
-  vim.fn.serverstart(pipepath)
+-- paths to check for project.godot file
+local paths_to_check = {'/', '/../'}
+local is_godot_project = false
+local godot_project_path = ''
+local cwd = vim.fn.getcwd()
+
+-- iterate over paths and check
+for key, value in pairs(paths_to_check) do
+    if vim.uv.fs_stat(cwd .. value .. 'project.godot') then
+        is_godot_project = true
+        godot_project_path = cwd .. value
+        break
+    end
+end
+
+-- check if server is already running in godot project path
+local is_server_running = vim.uv.fs_stat(godot_project_path .. '/server.pipe')
+-- start server, if not already running
+if is_godot_project and not is_server_running then
+    vim.fn.serverstart(godot_project_path .. '/server.pipe')
 end
 ```
-This will create the pipe file and start Neovim in server mode on startup.
+This code iterates over paths_to_check and tries to find a "project.godot" file.
+Then it checks if a server is already running.  
+I use this approach, because in my projects I separate the code in a "src/" directory.
+In my case the project.godot file is located in the parent directory.
+Additionally multiple Neovim instances can run, without causing errors or conflicts.  
+You can adapt the paths to check to your needs.
 
-There is room for improvements here, like to start server mode only, if a **project.godot** file is found.
-So there is no issue if you run multiple instances of Neovim.
-With the current setup, only the **first** instance opened, will receive the commands.  
-I will update this section, when I find a better solution or if you already have one, please let me know.
+Note that now a variable **is_godot_project** exists and allows to check if a Godot project is opened.
+This can get very handy to start the Godot LSP client, only for Godot projects or similar Godot specific configuration.
+No worries, this will be covered later in this blog post.
 
 ## Godot Editor Settings
 Now Neovim is ready to be set as external editor in **Editor Settings > Text Editor > External**.  
@@ -56,13 +71,12 @@ There you need to set the following values:
 3) Set **Exec Flags** to the following line.
 
 ```bash
---server /home/YOUR_USER/.cache/nvim/server.pipe --remote-send "<C-\><C-N>:e {file}<CR>:call cursor({line}+1,{col})<CR>"
+--server {project}/server.pipe --remote-send "<C-\><C-N>:e {file}<CR>:call cursor({line}+1,{col})<CR>"
 ```
-Remember to replace **YOUR_USER** with your username.
-
 This line will make Neovim open the **file** in a buffer and move your cursor to the indicated **line** and **column**.
 The **+1** in `cursor({line}+1)` is to go to the correct line.
-For some reason without +1, the line above is selected.
+For some reason without +1, the line above is selected.  
+The **{project}** keyword instead stands for the Godot project path.
 
 Now you can use Neovim as external editor in Godot and **open files** with it.
 
@@ -78,7 +92,13 @@ Plug('neovim/nvim-lspconfig')
 
 -- Setup
 local lspconfig = require('lspconfig')
-lspconfig.gdscript.setup{}
+
+-- godot lsp
+if is_godot_project then
+    -- setup lsp
+    lspconfig.gdscript.setup {}
+end
+
 ```
 Now you can access all special features when opening GDScript files.  
 You can try code competition with **Ctrl + x** and **Ctrl + o**.
@@ -151,7 +171,7 @@ But you can run specific scenes from the editor, right?
 Yes! But somehow Godot get's the breakpoints set with nvim-dap, **only** when started with nvim-dap.
 
 So I had to ask myself: how the f*ck was I debugging the last months??  
-And well, the ansewer is easy, I actually was not using nvim-dap, but the **breakpoint keyword**.  
+And well, the answer is easy, I actually was not using nvim-dap, but the **breakpoint keyword**.  
 
 The following code will print `Hello` and then break and wait.
 ```gd
@@ -170,29 +190,39 @@ And there is no need for an additional Neovim plugin.
 The best part of all this, I wrote my first **custom** Neovim functions/commands (or however they are called).
 Seeing for the first time, why Neovim is so fun and truly hackable.  
 ```lua
--- write breakpoint to new line
-vim.api.nvim_create_user_command('GodotBreakpoint', function()
-    vim.cmd('normal! obreakpoint' )
-    vim.cmd('write' )
-end, {})
-vim.keymap.set('n', '<leader>b', ':GodotBreakpoint<CR>')
+-- define functions only for Godot projects
+if is_godot_project then
+    -- write breakpoint to new line
+    vim.api.nvim_create_user_command('GodotBreakpoint', function()
+        vim.cmd('normal! obreakpoint' )
+        vim.cmd('write' )
+    end, {})
+    vim.keymap.set('n', '<leader>b', ':GodotBreakpoint<CR>')
 
--- delete all breakpoints in current file
-vim.api.nvim_create_user_command('GodotDeleteBreakpoints', function()
-    vim.cmd('g/breakpoint/d')
-end, {})
-vim.keymap.set('n', '<leader>BD', ':GodotDeleteBreakpoints<CR>')
+    -- delete all breakpoints in current file
+    vim.api.nvim_create_user_command('GodotDeleteBreakpoints', function()
+        vim.cmd('g/breakpoint/d')
+    end, {})
+    vim.keymap.set('n', '<leader>BD', ':GodotDeleteBreakpoints<CR>')
 
--- search all breakpoints in project
-vim.api.nvim_create_user_command('GodotFindBreakpoints', function()
-    vim.cmd(':grep breakpoint | copen')
-end, {})
-vim.keymap.set('n', '<leader>BF', ':GodotFindBreakpoints<CR>')
+    -- search all breakpoints in project
+    vim.api.nvim_create_user_command('GodotFindBreakpoints', function()
+        vim.cmd(':grep breakpoint | copen')
+    end, {})
+    vim.keymap.set('n', '<leader>BF', ':GodotFindBreakpoints<CR>')
+
+    -- append "# TRANSLATORS: " to current line
+    vim.api.nvim_create_user_command('GodotTranslators', function(opts)
+        vim.cmd('normal! A # TRANSLATORS: ')
+    end, {})
+end
 ```
 
 **GodotBreakpoint**  adds the "breakpoint" String below the line the cursor is on, indented correctly.  
 **GodotDeleteBreakpoints** deletes all breakpoints lines in the current buffer.  
 **GodotFindBreakpoints** finds all breakpoints in the current project.
+**GodotTranslators** adds a comment to the end of the line, for
+[translation comments](https://docs.godotengine.org/en/latest/tutorials/i18n/localization_using_gettext.html#extracting-localizable-strings-from-gdscript-files).  
 
 Now its possible to write, delete and search breakpoints within Neovim with simple keymaps.
 
@@ -221,14 +251,6 @@ vim.call('plug#begin')
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug('neovim/nvim-lspconfig')
 vim.call('plug#end')
-
--- ----------------------
--- Start as server
--- ----------------------
-local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
-if not vim.loop.fs_stat(pipepath) then
-  vim.fn.serverstart(pipepath)
-end
 
 -- ----------------------
 -- lsp
@@ -279,6 +301,47 @@ end, {})
 vim.keymap.set('n', '<leader>BF', ':GodotFindBreakpoints<CR>')
 ```
 
+## Ignore some files
+If you use file explorers plugins you might want to hide some files for Godot projects.
+Like the server.pipe file or all *.uid files introduced in Godot 4.4.  
+This hides the files in [Nerdtree](https://github.com/preservim/nerdtree).
+```lua
+if is_godot_project then
+    -- ignore *.uid files introduced in godot 4.4
+    -- ignore server.pipe file
+    vim.cmd('let NERDTreeIgnore = ["\\.uid$", "server.pipe"]')
+end
+```
+
+And this [Oil](https://github.com/stevearc/oil.nvim).
+```lua
+-- ----------------------
+-- oil
+-- ----------------------
+require("oil").setup({
+    view_options = {
+        show_hidden = true,
+        is_always_hidden = function(name, bufnr)
+            -- for godot projects ignore *.uid files
+            if is_godot_project then
+                -- ignore *.uid files introduced in godot 4.4
+                if vim.endswith(name, '.uid') then
+                    return true
+                end
+                -- ignore server.pipe file
+                if name == 'server.pipe' then
+                    return true
+                end
+            else
+                return false
+            end
+        end,
+    },
+})
+```
+If you use other file explorer plugins, there surely is a way to hide this files too.
+Just check the docs or some example configs.
+
 ## What I miss in Neovim
 So far the biggest feature I miss, is the easy **Ctrl + drag and drop** of a Node into the text editor.
 This will automatically create the var with the correct Nodepath.  
@@ -296,3 +359,7 @@ Another crucial advantage is that you can move the Node around the tree, or chan
 
 At the end of the day, being able to use Neovim pays back anyways, if you like it and are keen to keep learning.
 Or you already know everything about Vim/Neovim, but let's be honest, **nobody does**.
+
+## Credits
+I want to thank [Daniel](https://github.com/DanWlker) for his great suggestions.
+Now multiple instances can be used and the server mode only starts, if a Godot project has been found.
