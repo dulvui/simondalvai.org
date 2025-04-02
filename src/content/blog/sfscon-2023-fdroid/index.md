@@ -1,5 +1,5 @@
 +++
-title = "SFSCON 2023: F-Droid - The place for your FOSS Apps"
+title = "[Talk] SFSCON 2023: F-Droid - The place for your FOSS Apps"
 description = "F-Droid is an Free and Open Source app catalogue for Android. Find here details about my talk about it at SFSCON 2023"
 date = 2023-11-17T00:00:00+00:00
 updated = 2023-11-17T00:00:00+00:00
