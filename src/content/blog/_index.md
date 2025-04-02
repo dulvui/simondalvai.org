@@ -7,5 +7,4 @@ page_template = "blog-page.html"
 insert_anchor_links = "heading"
 +++
 
-I write monthly about game development, mostly with **Godot Engine**.  
-Sometimes also about other software related topics.
+I write monthly about game development and other software related topics.
