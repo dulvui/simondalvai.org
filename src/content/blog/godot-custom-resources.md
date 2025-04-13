@@ -2,7 +2,7 @@
 title = "Custom Resources in Godot Engine 4.x"
 description = "Guide on why and how to use Custom Resources in Godot Engine 4.x pointing out advantages and features."
 date = 2023-10-16T00:00:00+00:00
-updated = 2023-10-16T00:00:00+00:00
+updated = 2025-04-13T16:33:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111246607715225767"
 hackernews_link = "https://news.ycombinator.com/item?id=37906183"
@@ -56,6 +56,10 @@ By using the @export annotation you can modify all your resources directly in th
 Another cool feature is the built-in load and save to disk functionality.
 So you can replace all your JSON files with built-in Custom Resources.  
 Note: Only variables with @export annotation get saved to disk.
+
+**WARNING** RESOURCES CAN EXECUTE MALICOUS CODE  
+As long as this [Github issue](https://github.com/godotengine/godot-proposals/issues/4925)
+is open, resources should not be considered as a safe way to save data.
 
 Here an example:
 ```gd
