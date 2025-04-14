@@ -6,7 +6,6 @@ updated = 2025-11-02T09:30:00+00:00
 aliases = ["blog/futsal-manager-faq"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112667545362872105"
-hackernews_link = ""
 +++
 
 **[Wishlist now on Steam!](https://store.steampowered.com/app/3334770/99_Managers_Futsal_Edition/)**  

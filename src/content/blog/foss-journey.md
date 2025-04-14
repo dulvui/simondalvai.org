@@ -6,7 +6,6 @@ updated = 2023-07-15T00:00:00+00:00
 draft = true
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/"
-hackernews_link = "https://news.ycombinator.com/item?id="
 +++
 
 I really love Free and Open Source Software.

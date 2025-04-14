@@ -6,7 +6,6 @@ updated = 2024-12-17T17:26:00+00:00
 draft = false
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/113669337023174194"
-hackernews_link = "https://news.ycombinator.com/item?id=42443228"
 preview_image = "/blog/godot-moviemaker-part1/animation-player.webp"
 +++
 

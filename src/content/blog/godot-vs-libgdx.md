@@ -6,7 +6,6 @@ updated = 2023-02-26T00:00:00+00:00
 draft = false
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110486059574305335"
-hackernews_link = "https://news.ycombinator.com/item?id=36466440"
 +++
 
 I create games since 2018 and here I want to share my experience with [libGDX](https://libgdx.com/) and [Godot](https://godotengine.org/).

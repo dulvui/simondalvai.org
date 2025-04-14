@@ -6,7 +6,6 @@ updated = 2024-12-15T10:15:00+00:00
 draft = true
 [extra]
 mastodon_link = ""
-hackernews_link = ""
 preview_image = ""
 +++
 

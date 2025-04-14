@@ -5,7 +5,6 @@ date = 2024-01-14T17:48:00+00:00
 updated = 2024-01-14T17:48:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111761480193133845"
-hackernews_link = "https://news.ycombinator.com/item?id=39004528"
 +++
 
 My 3D Godot game [Ball2Box](@/games/ball2box/index.md) needs some variety, so I created some portals for new levels.

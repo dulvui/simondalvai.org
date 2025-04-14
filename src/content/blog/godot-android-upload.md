@@ -5,7 +5,6 @@ date = 2023-01-15T00:00:00+00:00
 updated = 2023-10-22T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391922548501588"
-hackernews_link = "https://news.ycombinator.com/item?id=36466436"
 +++
 
 In my last blog [post](@/blog/godot-ios-upload.md) I explained how my Github Action, to automatically export and upload Godot iOS games to the Apple App Store, works.

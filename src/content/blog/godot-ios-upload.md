@@ -5,7 +5,6 @@ date = 2022-12-29T00:00:00+00:00
 updated = 2023-10-22T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391913791345026"
-hackernews_link = "https://news.ycombinator.com/item?id=36466433"
 +++
 
 Github Actions allow you to automate repetitive tasks, like exporting your game for iOS and uploading it to the App Store.

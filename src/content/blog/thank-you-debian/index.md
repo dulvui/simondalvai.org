@@ -5,7 +5,6 @@ date = 2023-08-17T00:00:00+00:00
 updated = 2023-08-17T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110905529635419134"
-hackernews_link = "https://news.ycombinator.com/item?id=37162664"
 +++
 
 Happy 30th Birthday Debian!    

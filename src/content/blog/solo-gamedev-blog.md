@@ -5,7 +5,6 @@ date = 2024-07-24T21:30:00+00:00
 updated = 2023-07-24T21:30:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112843615277807687"
-hackernews_link = "https://news.ycombinator.com/item?id=41062417"
 +++
 
 Yes, it is worth it, **if you like writing** (or nowadays, prefer to let some fancy VC backed LLM service do the writing).

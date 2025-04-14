@@ -5,7 +5,6 @@ date = 2023-03-19T00:00:00+00:00
 updated = 2023-03-20T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110486078968483198"
-hackernews_link = "https://news.ycombinator.com/item?id=36456513"
 +++
 
 Last week I implemented dark mode on my website, without using any JS and only modern CSS media queries.  

@@ -4,7 +4,6 @@ description = "A short guide on how to use websockets with Godot in web applicat
 date = 2024-08-26T16:10:00+00:00
 updated = 2024-08-26T16:10:00+00:00
 [extra]
-hackernews_link= "https://news.ycombinator.com/item?id=41358665"
 mastodon_link  = "https://mastodon.social/@dulvui/113029203339573111"
 +++
 

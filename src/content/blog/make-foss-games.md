@@ -6,7 +6,6 @@ updated = 2025-04-03T08:15:00+00:00
 aliases = ["dt25"]
 [extra]
 mastodon_link = ""
-hackernews_link = ""
 preview_image = ""
 +++
 

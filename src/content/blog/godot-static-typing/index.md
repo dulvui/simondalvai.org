@@ -5,7 +5,6 @@ date = 2024-05-29T21:20:00+00:00
 dupdated = 2024-05-29T21:20:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112526439081963874"
-hackernews_link = "https://news.ycombinator.com/item?id=40517052"
 +++
 
 GDScript is a dynamic typed language, but you can add type hints, that make it a Static Typed language.

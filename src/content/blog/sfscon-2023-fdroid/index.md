@@ -5,7 +5,6 @@ date = 2023-11-17T00:00:00+00:00
 updated = 2023-11-17T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111426853125366195"
-hackernews_link = "https://news.ycombinator.com/item?id=38305874"
 +++
 
 Also this year I had a talk at [SFSCON 2023](https://www.sfscon.it/) about F-Droid.  

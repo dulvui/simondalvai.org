@@ -5,7 +5,6 @@ date = 2023-01-22T00:00:00+00:00
 updated = 2023-01-22T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110391932466547214"
-hackernews_link = "https://news.ycombinator.com/item?id=36466438"
 +++
 
 To publish a game to Apple App Store or Google Play Store, screenshots of the game are needed.

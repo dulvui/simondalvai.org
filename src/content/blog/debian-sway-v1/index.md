@@ -5,7 +5,6 @@ date = 2024-11-16T10:15:00+00:00
 updated = 2024-11-16T10:15:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/113492114310252401"
-hackernews_link = "https://news.ycombinator.com/item?id=42155631"
 preview_image = "/blog/debian-sway-v1/debian-sway.webp"
 +++
 

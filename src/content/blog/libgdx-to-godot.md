@@ -5,7 +5,6 @@ date = 2023-07-20T00:00:00+00:00
 updated = 2023-07-20T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110747423147539606"
-hackernews_link = "https://news.ycombinator.com/item?id=36803161"
 +++
 
 After using libGDX, since 2020 I create my games only with Godot Engine.

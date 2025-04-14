@@ -5,7 +5,6 @@ date = 2023-12-10T00:00:00+00:00
 updated = 2024-10-24T09:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111557144399329382"
-hackernews_link = "https://news.ycombinator.com/item?id=38592832"
 +++
 
 To upload a app to the App Store, you need to create a Developer Certificate.

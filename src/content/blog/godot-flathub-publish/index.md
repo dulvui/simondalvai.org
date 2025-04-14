@@ -5,7 +5,6 @@ date = 2024-03-26T21:25:00+00:00
 updated = 2024-03-26T21:25:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/112164102888378393"
-hackernews_link = "https://news.ycombinator.com/item?id=39833065"
 +++
 
 [Flathub](https://flathub.org/) is an Open Source and community driven App Store for any GNU/Linux system.

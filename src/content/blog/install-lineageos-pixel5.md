@@ -5,7 +5,6 @@ date = 2023-07-08T00:00:00+00:00
 updated = 2023-07-08T00:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/110677519803530168"
-hackernews_link = "https://news.ycombinator.com/item?id=36642508"
 +++
 
 I just bought a refurbished Pixel 5 to upgrade from my Samsung Galaxy S5.

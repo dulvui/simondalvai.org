@@ -5,7 +5,6 @@ date = 2025-01-19T09:53:00+00:00
 updated = 2025-03-24T09:05:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/113854416500491083"
-hackernews_link = "https://news.ycombinator.com/item?id=42755603"
 preview_image = "/blog/godot-neovim/treesitter.webp"
 +++
 

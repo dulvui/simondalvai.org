@@ -5,7 +5,6 @@ date = 2025-03-18T15:00:00+00:00
 updated = 2025-03-18T15:00:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/114184035048713465"
-hackernews_link = "https://news.ycombinator.com/item?id=43400292"
 +++
 
 Resources in Godot are **really powerful** and can make a Game Devs life easier in many ways.

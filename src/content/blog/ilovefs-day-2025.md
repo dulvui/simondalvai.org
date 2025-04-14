@@ -5,7 +5,6 @@ date = 2025-02-14T11:50:00+00:00
 updated = 2025-02-14T11:50:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/114001845229008808"
-hackernews_link = "https://news.ycombinator.com/item?id=43047078"
 +++
 
 It's been a long time since I wanted to share a list of FOSS projects I really enjoy.

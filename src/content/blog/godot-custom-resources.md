@@ -5,7 +5,6 @@ date = 2023-10-16T00:00:00+00:00
 updated = 2025-04-13T16:33:00+00:00
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/111246607715225767"
-hackernews_link = "https://news.ycombinator.com/item?id=37906183"
 +++
 
 ## Godot Resources in a nutshell
