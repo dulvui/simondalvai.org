@@ -41,3 +41,5 @@ Besides that, you are also able to suggest bug fixes, new features or create you
 
 Made with Godot Engine 4 and much love.
 
+## Trademark
+The "99 Managers" name is a registered Trademark of Simon Dalvai.
