@@ -29,7 +29,7 @@ It is still active maintained but it hasn't a big developer community like Godot
 Unity has probably the biggest mobile games development community.
 Since you can add every other Java or Android library of your choice, it supports a lot of third party plugins.
 
-## Android
+### Android
 Java and Kotlin are the official programming languages for Android and so, libGDX works really well on Android.
 The final App size is really small.
 My games are less than 3 MB big and the performance is really great.
@@ -38,7 +38,7 @@ You can build your games with gradle and also use automated CI/CD tools to autom
 Here you can find my Github Action to export and upload your games to the Google Play Store  
 https://github.com/dulvui/libgdx-ios-upload
 
-## iOS
+### iOS
 LibGdx also works on iOS using the [RoboVM](https://github.com/robovm/robovm-gradle-plugin) gradle plugin.
 It translates the Java code into iOS machine code and so it can work on iPhones.
 The performance is good but the app size increases drastically.
@@ -46,7 +46,7 @@ The 3 MB now raise to around 50 MB or more, but it is the price to pay to have l
 I also created a Github Action to export and upload your games to the Apple App Store  
 https://github.com/dulvui/libgdx-ios-upload
 
-## Useful tools
+### Useful tools
 The most useful tool I found to create your UI elements is the libGDX Skin Composer  
 https://libgdx.com/wiki/tools/skin-composer  
 This tool gives you a easy way to create your custom buttons, fonts, labels etc. with a GUI editor.
@@ -65,14 +65,14 @@ So the plugin you use today, might not work tomorrow, until you fix it by yourse
 I tried Google AdMob and Firebase on Godot, but then removed them, because I no longer wanted to contribute to privacy invading and with Ads loaded games.
 Thus, I removed all third party libraries and hope to make a few bucks only with [donations](/donate).
 
-## Android
+### Android
 Godot works well on Android and an empty game is about 8 MB big.
 My games are between 30 and 50 MB big, but most of the memory comes from the assets.
 And of course, I also created a Github Action for Godot to export and upload your game to the Google Play Store  
 https://github.com/dulvui/godot-android-export  
 
 
-## iOS
+### iOS
 Godot also works well with iOS, but you'll need a macOS device to export, execute and upload the game to the App Store.
 Or you simply use my Github Actions that does the uploading automatically for you, with no physical Mac device needed  
 https://github.com/dulvui/godot-ios-upload  
