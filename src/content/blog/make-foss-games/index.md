@@ -2,7 +2,7 @@
 title = "[Talk] Making FOSS games for fun and (hopefully) profit"
 descriptior = "The content of my talk for the monthly Developers Thursday at the NOI Techpark about FOSS game development"
 date = 2025-04-03T08:15:00+00:00
-updated = 2025-04-23T07:34:00+00:00
+updated = 2025-05-15T07:02:00+00:00
 aliases = ["dt25"]
 [extra]
 mastodon_link = "https://mastodon.social/@dulvui/114386121698522017"
@@ -152,6 +152,8 @@ open source project.
 
 **The list of game engines** on [Wikipedia](https://en.wikipedia.org/wiki/List_of_game_engines)
 has a lot of open source projects that can fit your needs.
+Another great website I just found recently is [enginesdatabas.com](https://enginesdatabase.com/),
+where you can find many possible engines with great filters.
 
 In my opinion, there are **two main categories**: libraries/frameworks and full engines.
 Like [libGDX](https://libgdx.com/) and [Godot Engine](https://godotengine.org/) I already used.  
